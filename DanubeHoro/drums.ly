@@ -2,11 +2,13 @@
 
 \include "helpers.ly"
 
+%{
 \header {
   title = "Danube Horo"
   composer = "Diko Iliev"
   instrument = \markup {Percussion}
 }
+%}
 
 %{
 cymc - crash cymbal
@@ -164,7 +166,7 @@ bassncym = \drummode {
 } % bass and cymbal
 
 \score {
-  \new StaffGroup <<
+  \context StaffGroup = "sgPercussion" <<
   \time 2/4
   \override Score.BarNumber.break-visibility = ##(#f #t #t)
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 2)

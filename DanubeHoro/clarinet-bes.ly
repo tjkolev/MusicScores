@@ -2,11 +2,13 @@
 
 \include "helpers.ly"
 
+%{
 \header {
   title = "Danube Horo"
   composer = "Diko Iliev"
   instrument = \markup {Clarient B\flat}
 }
+%}
 
 clarinetBFlatNotes = {
   \clef treble
