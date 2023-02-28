@@ -30,9 +30,10 @@ rptb = #(define-music-function (cnt) (integer?)
   #}
 )
 
-snare = \drummode {
+
+snareA = \drummode {
+  | sn4:32 8 r8 | 4:32 8[ r16 16] | 8[ r16 16] 8[ r16 16] | 8 r8 r4 \break
   \repeat volta 2 {
-    | sn4:32 8 r8 | 4:32 8[ r16 16] | 8[ r16 16] 8[ r16 16] | 8 r8 r4 \break
     | \rpts 6 | r8 4.:8 | 2:8 \break
     | \rpts 6 | r8 4.:8 | 2:8 \break
     | \rpts 6 | r8 4.:8 | 2:8 \break
@@ -42,7 +43,9 @@ snare = \drummode {
     { 8 r8 r4 \break }
     { 8 r8 4:32 }
   }
-  
+}
+
+snareB = \drummode {
   \repeat volta 2 {
     | \rpts 3 | r8 4.:8 | \rpts 3 \break
     | r8 4.:8 | \rpts 3 | r8 4.:8 | \rpts 3 \break
@@ -54,7 +57,9 @@ snare = \drummode {
     { 8 r8 4:32 }
     { 8 r8 r4 }
   }
-  
+}
+
+snareC = \drummode {
   \repeat volta 2 {
     | \rpts 4 \break
     | \rpts 7 | r8 4.:8 \break
@@ -66,7 +71,9 @@ snare = \drummode {
     { 8 r8 r4 }
     {8 r8 4:32 \break }
   }
-  
+}
+
+snareD = \drummode {
   \repeat volta 2 {
     | \rpts 3 | r8 4.:8 | \rpts 2 | r8 4.:8 | 2:8 \break
     | \rpts 3 | r8 4.:8 | \rpts 2 | r8 4.:8
@@ -75,7 +82,9 @@ snare = \drummode {
     { 8 r8 4:32 }
     { 8 r8 r4 \break }
   }
-  
+}
+
+snareE = \drummode {
   \repeat volta 2 {
     | \rpt 2 { r8 4.:8 | 2:8 } | \rpts 2 | r8 4.:8 | 2:8 \break
     | \rpt 2 { r8 4.:8 | 2:8 } | 8 r8 r4 | \rpts 1 | r8 4.:8 | 8 r8 r4 \break
@@ -86,7 +95,9 @@ snare = \drummode {
     { 8 r8 r4 \break }
     { 8 r8 4:32 }
   }
-  
+}
+
+snareF = \drummode {
   \repeat volta 2 {
     | \rpts 3 | \rpt 2 { r8 4.:8 } | \rpts 2 \break
     | r8 4.:8 | \rpts 3 | \rpt 2 { r8 4.:8 } | \rpts 2
@@ -98,9 +109,9 @@ snare = \drummode {
 } % snare
 
 
-bassncym = \drummode {
+bassncymA = \drummode {
+  | bd4 8 r8 | 4 8 r8 | 8[ r8 8] r8 | 8 r8 r4 \break
   \repeat volta 2 {
-    | bd4 8 r8 | 4 8 r8 | 8[ r8 8] r8 | 8 r8 r4 \break
     | \rptb 7 | 4 r4 \break
     | \rptb 6 | 4 r4 | 4 r4 \break
     | \rptb 7 | 4 r4 \break
@@ -110,7 +121,9 @@ bassncym = \drummode {
     { 8 r8 r4 \break }
     { 8 r8 r4 }
   }
-  
+}
+
+bassncymB = \drummode {
   \repeat volta 2 {
     | \rptb 3 | 4 r4 | \rptb 3 \break
     | 4 r4 | \rptb 3 | 4 r4 | \rptb 3 \break
@@ -122,7 +135,9 @@ bassncym = \drummode {
     { 8 r8 r4 }
     { 8 r8 r4 }
   }
-  
+}
+
+bassC = \drummode {
   \repeat volta 2 {
     | \rptb 4 \break
     | \rptb 7 | 4 r4 \break
@@ -134,7 +149,22 @@ bassncym = \drummode {
     { 8 r8 r4 }
     { 8 r8 r4 \break }
   }
+}
+cymC = \drummode {
+  \repeat volta 2 {
+    | \rptb 4 \break
+    | \rptb 7 | 4 r4 \break
+    | \rptb 2 | 4 r4 | 4 r4 | \rptb 2 \break
+    | \rptb 6 | r2_\markup { "No cymbal" } | r2 \break
+    | \rptb 4 | 4 r4
+  }
+  \alternative {
+    { 8 r8 r4 }
+    { 8 r8 r4 \break }
+  }
+}
 
+bassncymD = \drummode {
   \repeat volta 2 {
     | \rptb 3 | 4 r4 | \rptb 3 | 4 r4 \break
     | \rptb 3 | 4 r4 | \rptb 2 | 4 r4
@@ -143,7 +173,9 @@ bassncym = \drummode {
     { 8 r8 r4 }
     { 8 r8 r4 \break }
   }
+}
 
+bassncymE = \drummode {
   \repeat volta 2 {
     | \rpt 2 { \bsPhBase | 8 r8 r4 } | \rptb 2 | 8 r8 r4 | 8 r8 4 \break
     | \rpt 2 { \bsPhBase | 8 r8 r4 } | 8 r8 r4 | \rptb 2 | 8 r8 r4 \break
@@ -154,7 +186,9 @@ bassncym = \drummode {
     { 8 r8 r4 \break }
     { 8 r8 4 }
   }
+}
 
+bassncymF = \drummode {
   \repeat volta 2 {
     | \rptb 3 | 4 r4 | \rptb 3 \break
     | 4 r4 | \rptb 3 | \rpt 2 { 4 r4 } | \rptb 2
@@ -171,17 +205,15 @@ bassncym = \drummode {
   \override Score.BarNumber.break-visibility = ##(#f #t #t)
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 2)
   \new DrumStaff \with { drumStyleTable = #percussion-style \override StaffSymbol.line-count = #1 } <<
-    \new DrumVoice { \stemUp \snare }
+    \new DrumVoice { \stemUp \snareA \snareB \snareC \snareD \snareE \snareF }
   >>
   \new DrumStaff \with { drumStyleTable = #percussion-style \override StaffSymbol.line-count = #1 } <<
-    \new DrumVoice { \voiceOne \stemUp   \bassncym }
-    \new DrumVoice { \voiceTwo \stemDown \bassncym }
+    \new DrumVoice { \voiceOne \stemUp   \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
+    \new DrumVoice { \voiceTwo \stemDown \bassncymA \bassncymB \cymC \bassncymD \bassncymE \bassncymF }
   >>
   >>
   
   \layout {
     indent = #0
-  }
-  \midi {
   }
 }
