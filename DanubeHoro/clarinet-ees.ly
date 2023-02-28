@@ -13,7 +13,7 @@
 clarinetEFlatA = {
   \key f \major
     
-  | \trl {a''8( bes a)} g r
+  | \trl {a8( bes a)} g r
   | \trl {g( a g)} f[ r16 e]
   | g8[ r16 g16] f8[ r16 e16]
   | d8 r8 r4 \break
@@ -49,7 +49,6 @@ clarinetEFlatA = {
     | \trl {a'8( gis) a} \trl {f( e) f}
     | d\prall r8 r4 \break
     
-    % \key bes \major % print mistake?
     | f2( f8)[ e( g f)]
     | e[( d cis bes)] g2 \break
     
@@ -211,7 +210,7 @@ clarinetEFlatF = {
 clarinetEFlatNotes = {
   \clef treble
   \time 2/4
-  \relative {
+  \relative a'' {
     \clarinetEFlatA
     \clarinetEFlatB
     \clarinetEFlatC

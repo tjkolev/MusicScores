@@ -1,17 +1,53 @@
-clarinetBFlatA = {
+partA = {
+  \repeat volta 2 {
+  }
+  \alternative {
+    {}
+    {}
+  }
 } % A part
 
-clarinetBFlatB = {
+partB = {
+  \repeat volta 2 {
+  }
+  \alternative {
+    {}
+    {}
+  }
 } % B part
 
-clarinetBFlatC = {
+partC = {
+  \repeat volta 2 {
+  }
+  \alternative {
+    {}
+    {}
+  }
 } % C part
 
-clarinetBFlatD = {
+partD = {
+  \repeat volta 2 {
+  }
+  \alternative {
+    {}
+    {}
+  }
 } % D part
 
-clarinetBFlatE = {
+partE = {
+  \repeat volta 2 {
+  }
+  \alternative {
+    {}
+    {}
+  }
 } % E part
 
-clarinetBFlatF = {
+partF = {
+  \repeat volta 2 {
+  }
+  \alternative {
+    {}
+    {}
+  }
 } % F part
