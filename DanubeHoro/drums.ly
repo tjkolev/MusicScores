@@ -11,7 +11,7 @@
 %}
 
 %{
-cymc - crash cymbal
+cymr - ride cymbal
 sn - snare
 bd - bass drum
 %}
@@ -109,8 +109,11 @@ snareF = \drummode {
 } % snare
 
 
+cymbIntro = \drummode { | cymr4 8 r8 | 4 8 r8 | 8[ r8 8] r8 | 8 r8 r4 \break }
+bassIntro = \drummode { | bd4 8 r8 | 4 8 r8 | 8[ r8 8] r8 | 8 r8 r4 \break }
+
 bassncymA = \drummode {
-  | bd4 8 r8 | 4 8 r8 | 8[ r8 8] r8 | 8 r8 r4 \break
+  %| bd4 8 r8 | 4 8 r8 | 8[ r8 8] r8 | 8 r8 r4 \break
   \repeat volta 2 {
     | \rptb 7 | 4 r4 \break
     | \rptb 6 | 4 r4 | 4 r4 \break
@@ -199,6 +202,11 @@ bassncymF = \drummode {
   }
 } % bass and cymbal
 
+#(define mydrums '(
+ (bassdrum        default   #f          -1)
+ (ridecymbal      cross     #f           1)
+))
+
 \score {
   \context StaffGroup = "sgPercussion" <<
   \time 2/4
@@ -207,9 +215,10 @@ bassncymF = \drummode {
   \new DrumStaff \with { drumStyleTable = #percussion-style \override StaffSymbol.line-count = #1 } <<
     \new DrumVoice { \stemUp \snareA \snareB \snareC \snareD \snareE \snareF }
   >>
-  \new DrumStaff \with { drumStyleTable = #percussion-style \override StaffSymbol.line-count = #1 } <<
-    \new DrumVoice { \voiceOne \stemUp   \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
-    \new DrumVoice { \voiceTwo \stemDown \bassncymA \bassncymB \cymC \bassncymD \bassncymE \bassncymF }
+  \new DrumStaff \with { \override StaffSymbol.line-count = #1 } <<
+    \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+    \new DrumVoice { \voiceTwo \stemUp   \cymbIntro \bassncymA \bassncymB \cymC \bassncymD \bassncymE \bassncymF }
+    \new DrumVoice { \voiceOne \stemDown \bassIntro \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
   >>
   >>
   
