@@ -6,16 +6,16 @@
 }
 
 % \include "flute.ly"
-\include "clarinet-bes.ly"
+\include "clarinet-ees.ly"
 \include "drums.ly"
 
 \book {
   \score {
     <<
     \new Staff \with { 
-      instrumentName = \markup { Clarient B\flat}
-      shortInstrumentName = \markup { Cl.B\flat }
-    } \clarinetBFlatNotes
+      instrumentName = \markup { Clarient E\flat}
+      shortInstrumentName = \markup { Cl.E\flat }
+    } \clarinetEFlatNotes
     
     \new StaffGroup = "sgPercussion" <<
       \time 2/4
