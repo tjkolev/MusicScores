@@ -10,17 +10,15 @@
 }
 %}
 
-clarinetBFlatNotes = {
-  \clef treble
-  \time 2/4
+clarinetBFlatA = {
   \key f \major
-  
-  \relative {
+    
+  | \trl {a''8( bes a)} g r
+  | \trl {g( a g)} f[ r16 e]
+  | g8[ r16 g16] f8[ r16 e16]
+  | d8 r8 r4 \break
+
   \repeat volta 2 {
-    | \trl {a''8( bes a)} g r
-    | \trl {g( a g)} f[ r16 e]
-    | g8[ r16 g16] f8[ r16 e16]
-    | d8 r8 r4 \break
     
     | \trl {f8( e) d} \trl {f( e) d}
     | a\prall r8 r4
@@ -64,7 +62,9 @@ clarinetBFlatNotes = {
     { d r r4 \break }
     { d8 r a4 }
   }
+} % A part
 
+clarinetBFlatB = {
   % page 111
   \repeat volta 2 {
     | d8\prall r f\prall r
@@ -109,7 +109,9 @@ clarinetBFlatNotes = {
   }
   
   \break
-  
+} % B part
+
+clarinetBFlatC = {
   % page 120
   \key bes \major
   \repeat volta 2 {
@@ -140,7 +142,9 @@ clarinetBFlatNotes = {
   }
   
   \break
+} % C part
 
+clarinetBFlatD = {
   % page 129
   \key f \major
   \repeat volta 2 {
@@ -158,8 +162,10 @@ clarinetBFlatNotes = {
     { d8 \repeatTie r r4 }
   }
   
-  \break
-  
+  \break  
+} % D part
+
+clarinetBFlatE = {
   % page 133
   \key d \major
   \repeat volta 2 {
@@ -184,7 +190,9 @@ clarinetBFlatNotes = {
     { d8)[ a( d fis)] \break }
     { d8 \repeatTie r fis4 }
   }
-  
+} % E part
+
+clarinetBFlatF = {
   \repeat volta 2 {
     | \repeat unfold 3 { r8 b[ r b] } \break
     
@@ -198,9 +206,20 @@ clarinetBFlatNotes = {
     { b8 r fis'4 }
     { b,8 r r4 }
   }
+} % F part
 
-} % top \relative
-} % clarinetBFlatNotes
+clarinetBFlatNotes = {
+  \clef treble
+  \time 2/4
+  \relative {
+    \clarinetBFlatA
+    \clarinetBFlatB
+    \clarinetBFlatC
+    \clarinetBFlatD
+    \clarinetBFlatE
+    \clarinetBFlatF
+  }
+}
 
 \score {
   \new Staff \clarinetBFlatNotes
