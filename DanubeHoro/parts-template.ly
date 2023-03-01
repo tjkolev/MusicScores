@@ -1,4 +1,6 @@
+
 partA = {
+  \sectionLabel "Part A"
   \repeat volta 2 {
   }
   \alternative {
@@ -8,6 +10,7 @@ partA = {
 } % A part
 
 partB = {
+  \sectionLabel "Part B"
   \repeat volta 2 {
   }
   \alternative {
@@ -16,7 +19,8 @@ partB = {
   }
 } % B part
 
-partC = {
+partC = { % 31 bars + 1
+  \sectionLabel "Part C"
   \repeat volta 2 {
   }
   \alternative {
@@ -26,6 +30,7 @@ partC = {
 } % C part
 
 partD = {
+  \sectionLabel "Part D"
   \repeat volta 2 {
   }
   \alternative {
@@ -35,6 +40,7 @@ partD = {
 } % D part
 
 partE = {
+  \sectionLabel "Part E"
   \repeat volta 2 {
   }
   \alternative {
@@ -44,6 +50,7 @@ partE = {
 } % E part
 
 partF = {
+  \sectionLabel "Part F"
   \repeat volta 2 {
   }
   \alternative {
