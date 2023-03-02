@@ -245,9 +245,27 @@ hornBarNotes = {
   }
 }
 
+sgHorn = \new StaffGroup <<
+
+  \new Staff \with {
+    instrumentName = "Tenor Horn"
+    shortInstrumentName = "ten.h"
+  }
+  \hornTenNotes
+
+  \new Staff \with {
+    instrumentName = "Baritone Horn"
+    shortInstrumentName = "bar.h"
+  }
+  \hornBarNotes
+
+>>
+
+%{
 \score {
   <<
   \new Staff \hornTenNotes
   \new Staff \hornBarNotes
   >>
 }
+%}

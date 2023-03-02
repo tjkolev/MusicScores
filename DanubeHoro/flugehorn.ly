@@ -210,6 +210,22 @@ flugehornIINotes = {
   }
 }
 
+sgFlughorn = \new StaffGroup <<
+
+  \new Staff \with {
+    instrumentName = "Flugelhorn I"
+    shortInstrumentName = "flgh I"
+  }
+  \flugehornINotes
+
+  \new Staff \with {
+    instrumentName = "Flugelhorn II"
+    shortInstrumentName = "flgh II"
+  }
+  \flugehornIINotes
+
+>>
+%{
 \score {
   <<
   \new Staff \flugehornINotes
@@ -219,3 +235,4 @@ flugehornIINotes = {
   \layout {
   }
 }
+%}

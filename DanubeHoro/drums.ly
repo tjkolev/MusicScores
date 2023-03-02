@@ -89,7 +89,7 @@ snareE = \drummode {
     | \rpt 2 { r8 4.:8 | 2:8 } | \rpts 2 | r8 4.:8 | 2:8 \break
     | \rpt 2 { r8 4.:8 | 2:8 } | 8 r8 r4 | \rpts 1 | r8 4.:8 | 8 r8 r4 \break
     | \rpt 2 { r8 4.:8 | 2:8 } | \rpts 2 | r8 4.:8 | 8 r8 4:32 \break
-    | \rpts 6 | r8 4.:8 
+    | \rpts 6 | r8 4.:8
   }
   \alternative {
     { 8 r8 r4 \break }
@@ -207,22 +207,28 @@ bassncymF = \drummode {
  (ridecymbal      cross     #f           1)
 ))
 
-\score {
-  \context StaffGroup = "sgPercussion" <<
+sgPercussion = \new StaffGroup <<
   \time 2/4
   \override Score.BarNumber.break-visibility = ##(#f #t #t)
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 2)
-  \new DrumStaff \with { drumStyleTable = #percussion-style \override StaffSymbol.line-count = #1 } <<
-    \new DrumVoice { \stemUp \snareA \snareB \snareC \snareD \snareE \snareF }
-  >>
-  \new DrumStaff \with { \override StaffSymbol.line-count = #1 } <<
-    \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
-    \new DrumVoice { \voiceTwo \stemUp   \cymbIntro \bassncymA \bassncymB \cymC \bassncymD \bassncymE \bassncymF }
-    \new DrumVoice { \voiceOne \stemDown \bassIntro \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
-  >>
-  >>
-  
-  \layout {
-    indent = #0
-  }
-}
+
+  \new DrumStaff \with {
+      instrumentName = "Snare"
+      shortInstrumentName = "snr"
+      \override StaffSymbol.line-count = #1
+    }
+    <<
+      \new DrumVoice { \stemUp \snareA \snareB \snareC \snareD \snareE \snareF }
+    >>
+
+  \new DrumStaff \with {
+      instrumentName = \markup { \column { \line {"Cymbal"} \line {"Bass Drum"} } }
+      shortInstrumentName = \markup { \column { \line {"cym"} \line {"bdr"} } }
+      \override StaffSymbol.line-count = #1
+    }
+    <<
+      \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
+      \new DrumVoice { \voiceTwo \stemUp   \cymbIntro \bassncymA \bassncymB \cymC \bassncymD \bassncymE \bassncymF }
+      \new DrumVoice { \voiceOne \stemDown \bassIntro \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
+    >>
+>>
