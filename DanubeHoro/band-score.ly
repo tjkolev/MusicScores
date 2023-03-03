@@ -17,6 +17,7 @@
 \include "drums.ly"
 \include "flugehorn.ly"
 \include "horn.ly"
+\include "tuba.ly"
 
 \book {
   \score {
@@ -32,6 +33,8 @@
     \sgFlughorn
 
     \sgHorn
+
+    \staffTuba
 %{
     \new StaffGroup = "sgPercussion" <<
       \time 2/4
@@ -62,6 +65,35 @@
 
    }
   }
+}
+
+\book {
+  \bookOutputSuffix "tenorHorn"
+  \new Staff \with {
+    instrumentName = "Tenor Horn"
+  }
+  \hornTenNotes
+}
+
+\book {
+  \bookOutputSuffix "baritoneHorn"
+  \new Staff \with {
+    instrumentName = "Baritone Horn"
+  }
+  \hornBarNotes
+}
+
+\book {
+  \bookOutputSuffix "tuba"
+  \new Staff \with {
+    instrumentName = "Tuba I & II"
+  }
+  <<
+    \tubaINotes
+    \\
+    \tubaIINotes
+  >>
+
 }
 
 %{
