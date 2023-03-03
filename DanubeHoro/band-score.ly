@@ -68,26 +68,23 @@
 }
 
 \book {
+  \header { instrument = "Tenor Horn" }
   \bookOutputSuffix "tenorHorn"
-  \new Staff \with {
-    instrumentName = "Tenor Horn"
-  }
+  \new Staff
   \hornTenNotes
 }
 
 \book {
+  \header { instrument = "Baritone Horn" }
   \bookOutputSuffix "baritoneHorn"
-  \new Staff \with {
-    instrumentName = "Baritone Horn"
-  }
+  \new Staff
   \hornBarNotes
 }
 
 \book {
+  \header { instrument = "Tuba I & II" }
   \bookOutputSuffix "tuba"
-  \new Staff \with {
-    instrumentName = "Tuba I & II"
-  }
+  \new Staff
   <<
     \tubaINotes
     \\
