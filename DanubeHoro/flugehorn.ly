@@ -225,14 +225,7 @@ sgFlughorn = \new StaffGroup <<
   \flugehornIINotes
 
 >>
-%{
-\score {
-  <<
-  \new Staff \flugehornINotes
-  \new Staff \flugehornIINotes
-  >>
 
-  \layout {
-  }
+\score {
+  \sgFlughorn
 }
-%}

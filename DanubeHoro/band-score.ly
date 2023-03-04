@@ -12,6 +12,7 @@
   composer = "Diko Iliev"
 }
 
+
 \include "flute.ly"
 \include "clarinet-ees.ly"
 \include "trombone.ly"
@@ -19,6 +20,7 @@
 \include "flugehorn.ly"
 \include "horn.ly"
 \include "tuba.ly"
+
 
 \book {
   \score {
@@ -36,6 +38,7 @@
     \sgHorn
 
     \staffTuba
+
 %{
     \new StaffGroup = "sgPercussion" <<
       \time 2/4
@@ -68,6 +71,7 @@
   }
 }
 
+%{
 \book {
   \header { instrument = "Tenor Horn" }
   \bookOutputSuffix "tenorHorn"
@@ -93,6 +97,7 @@
   >>
 
 }
+%}
 
 %{
 \book {

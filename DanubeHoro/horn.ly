@@ -261,8 +261,7 @@ sgHorn = \new StaffGroup <<
 
 >>
 
-%{
+
 \score {
   \sgHorn
 }
-%}

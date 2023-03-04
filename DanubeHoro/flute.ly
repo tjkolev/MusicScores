@@ -260,8 +260,7 @@ staffFluteOboe = \new Staff \with {
   \oboeNotes
   >>
 
-%{
+
 \score {
   \staffFluteOboe
 }
-%}

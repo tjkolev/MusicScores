@@ -2,13 +2,7 @@
 
 \include "helpers.ly"
 
-%{
-\header {
-  title = "Danube Horo"
-  composer = "Diko Iliev"
-  instrument = \markup {Percussion}
-}
-%}
+% Using "about" twice as many beats per line in this file compared to the rest
 
 %{
 cymr - ride cymbal
@@ -32,7 +26,10 @@ rptb = #(define-music-function (cnt) (integer?)
 
 
 snareA = \drummode {
+  \sectionLabel "Intro"
   | sn4:32 8 r8 | 4:32 8[ r16 16] | 8[ r16 16] 8[ r16 16] | 8 r8 r4 \break
+
+  \sectionLabel "Part A"
   \repeat volta 2 {
     | \rpts 6 | r8 4.:8 | 2:8 \break
     | \rpts 6 | r8 4.:8 | 2:8 \break
@@ -46,6 +43,7 @@ snareA = \drummode {
 }
 
 snareB = \drummode {
+  \sectionLabel "Part B"
   \repeat volta 2 {
     | \rpts 3 | r8 4.:8 | \rpts 3 \break
     | r8 4.:8 | \rpts 3 | r8 4.:8 | \rpts 3 \break
@@ -60,12 +58,13 @@ snareB = \drummode {
 }
 
 snareC = \drummode {
+  \sectionLabel "Part C"
   \repeat volta 2 {
     | \rpts 4 \break
     | \rpts 7 | r8 4.:8 \break
     | \rpts 2 | r8 4.:8 | 2:8 | \rpts 2 \break
     | \rpts 6 | r8 4.:8 | \rpts 1 \break
-    | \rpts 4 | r8 4.:8
+    | \grace s8 \rpts 4 | r8 4.:8
   }
   \alternative {
     { 8 r8 r4 }
@@ -74,6 +73,7 @@ snareC = \drummode {
 }
 
 snareD = \drummode {
+  \sectionLabel "Part D"
   \repeat volta 2 {
     | \rpts 3 | r8 4.:8 | \rpts 2 | r8 4.:8 | 2:8 \break
     | \rpts 3 | r8 4.:8 | \rpts 2 | r8 4.:8
@@ -85,6 +85,7 @@ snareD = \drummode {
 }
 
 snareE = \drummode {
+  \sectionLabel "Part E"
   \repeat volta 2 {
     | \rpt 2 { r8 4.:8 | 2:8 } | \rpts 2 | r8 4.:8 | 2:8 \break
     | \rpt 2 { r8 4.:8 | 2:8 } | 8 r8 r4 | \rpts 1 | r8 4.:8 | 8 r8 r4 \break
@@ -98,6 +99,7 @@ snareE = \drummode {
 }
 
 snareF = \drummode {
+  \sectionLabel "Part F"
   \repeat volta 2 {
     | \rpts 3 | \rpt 2 { r8 4.:8 } | \rpts 2 \break
     | r8 4.:8 | \rpts 3 | \rpt 2 { r8 4.:8 } | \rpts 2
@@ -146,7 +148,7 @@ bassC = \drummode {
     | \rptb 7 | 4 r4 \break
     | \rptb 2 | 4 r4 | 4 r4 | \rptb 2 \break
     | \rptb 6 | r8 4.:8 | \rpts 1 \break
-    | \rptb 4 | 4 r4
+    | \grace s8 \rptb 4 | 4 r4
   }
   \alternative {
     { 8 r8 r4 }
@@ -159,7 +161,7 @@ cymC = \drummode {
     | \rptb 7 | 4 r4 \break
     | \rptb 2 | 4 r4 | 4 r4 | \rptb 2 \break
     | \rptb 6 | r2_\markup { "No cymbal" } | r2 \break
-    | \rptb 4 | 4 r4
+    | \grace s8 \rptb 4 | 4 r4
   }
   \alternative {
     { 8 r8 r4 }
@@ -232,3 +234,7 @@ sgPercussion = \new StaffGroup <<
       \new DrumVoice { \voiceOne \stemDown \bassIntro \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
     >>
 >>
+
+\score {
+  \sgPercussion
+}

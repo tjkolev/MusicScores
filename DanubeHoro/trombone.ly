@@ -58,7 +58,7 @@ trombC = {
     | <f a c>2:8^"..." | r8 <f a c>[ r <f a c>] | r8 <f bes des>[ r <f a c>] \break
     | \rpt 3 { r8 <f a c>[ r <f a c>] } | r <f a c>[ r <f c' des>] \break
     | \rpt 2 { r8 <f bes des>[ r <f bes des>] } | r <f bes des>4.:8 | r8 <ees ges bes>[ r <ees ges bes>] \break
-    | \rpt 2 { r8 <ees ges bes>[ r <ees ges bes>] } | r8 <f a c>[ r <f bes des>] \break
+    | \grace s8 \rpt 2 { r8 <ees ges bes>[ r <ees ges bes>] } | r8 <f a c>[ r <f bes des>] \break
     | r <f c' des>[ r <f c' des>] | r <f a c>4.:8
   }
   \alternative {

@@ -98,7 +98,7 @@ tubaIC = { % 31 bars + 1
     | c[ bes a ges] | f[ r c'] r | bes[ r c] r \break
     | f[ r f] r | f r c[ a] | f'[ r c] r | f[ r f] r \break
     | bes,[ r des] r | bes[ r f] r | bes4 r | f8[ r bes] r \break
-    | \rpt 2 { ees[ r bes] r } | f[ r bes] r \break
+    | \grace s8 \rpt 2 { ees[ r bes] r } | f[ r bes] r \break
     | ges[ r c] r | f, r c'[ a]
   }
   \alternative {
@@ -118,7 +118,7 @@ tubaIIC = { % 31 bars + 1
     | c[ bes' a ges] | f[ r c] r | bes[ r c] r \break
     | f[ r f] r | f r c[ a] | f'[ r c] r | f[ r f] r \break
     | bes,[ r des] r | bes[ r f'] r | bes,4 r | f8[ r bes] r \break
-    | \rpt 2 { ees[ r bes] r } | f'[ r bes,] r \break
+    | \grace s8 \rpt 2 { ees[ r bes] r } | f'[ r bes,] r \break
     | ges[ r c] r | f r c[ a]
   }
   \alternative {

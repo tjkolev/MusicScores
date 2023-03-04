@@ -130,7 +130,7 @@ clarinetEFlatC = {
 
     | r4 \trl {d'8( c) bes} | \trl {c( bes) a} g r8 | r2 | r2 \break
 
-    | r4 \trl {c,8( b) c} | \trl {ees( d) ees} g r8 | \trl {a( bes a)} g r \break
+    | \grace s8 r4 \trl {c,8( b) c} | \trl {ees( d) ees} g r8 | \trl {a( bes a)} g r \break
 
     | \trl {g( a g)} fis[ r16 ees16] | d2(
   }
