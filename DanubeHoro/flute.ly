@@ -229,7 +229,6 @@ oboeF = {
 fluteNotes = {
   \time 2/4
   \relative c' {
-    % \override Score.BarNumber.break-visibility = ##(#t #t #t)
     \fluteA
     \fluteB
     \fluteC

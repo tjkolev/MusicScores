@@ -209,8 +209,8 @@ bassncymF = \drummode {
 
 sgPercussion = \new StaffGroup <<
   \time 2/4
-  \override Score.BarNumber.break-visibility = ##(#f #t #t)
-  \set Score.barNumberVisibility = #(every-nth-bar-number-visible 2)
+  % \override Score.BarNumber.break-visibility = ##(#f #t #t)
+  % \set Score.barNumberVisibility = #(every-nth-bar-number-visible 2)
 
   \new DrumStaff \with {
       instrumentName = "Snare"

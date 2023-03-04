@@ -1,5 +1,10 @@
+\version "2.24.0"
+
+\include "helpers.ly"
 
 partA = {
+  \sectionLabel "Intro"
+
   \sectionLabel "Part A"
   \repeat volta 2 {
   }
@@ -19,7 +24,7 @@ partB = {
   }
 } % B part
 
-partC = { % 31 bars + 1
+partC = {
   \sectionLabel "Part C"
   \repeat volta 2 {
   }
@@ -58,3 +63,15 @@ partF = {
     {}
   }
 } % F part
+
+fluteNotes = {
+  \time 2/4
+  \relative c' {
+    \partA
+    \partB
+    \partC
+    \partD
+    \partE
+    \partF
+  }
+}

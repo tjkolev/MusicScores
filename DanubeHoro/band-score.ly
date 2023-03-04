@@ -14,6 +14,7 @@
 
 \include "flute.ly"
 \include "clarinet-ees.ly"
+\include "trombone.ly"
 \include "drums.ly"
 \include "flugehorn.ly"
 \include "horn.ly"
@@ -25,6 +26,8 @@
     \staffFluteOboe
 
     \staffClarEFlat
+
+    \staffTrombone
 
     \sgPercussion
 
