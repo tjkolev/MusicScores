@@ -38,31 +38,6 @@
     \sgHorn
 
     \staffTuba
-
-%{
-    \new StaffGroup = "sgPercussion" <<
-      \time 2/4
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \set Score.barNumberVisibility = #(every-nth-bar-number-visible 2)
-
-      \new DrumStaff \with {
-        instrumentName = \markup { Snare }
-        drumStyleTable = #percussion-style
-        \override StaffSymbol.line-count = #1
-      } <<
-        \new DrumVoice { \stemUp \snare }
-      >>
-
-      \new DrumStaff \with {
-        instrumentName = \markup { \column { \line {Cymbals} \line {Base Drum} }}
-        drumStyleTable = #percussion-style
-        \override StaffSymbol.line-count = #1
-      } <<
-        \new DrumVoice { \voiceOne \stemUp   \bassncym }
-        \new DrumVoice { \voiceTwo \stemDown \bassncym }
-      >>
-    >>
-%}
     >>
 
    \layout {
@@ -71,42 +46,53 @@
   }
 }
 
-%{
+
+\book {
+  \header { instrument = "Flue and Oboe" }
+  \bookOutputSuffix "fluteOboe"
+  \staffFluteOboe
+}
+
+\book {
+  \header { instrument = \markup {Clarient E\flat} }
+  \bookOutputSuffix "clarinetBFlat"
+  \staffClarEFlat
+}
+
+\book {
+  \header { instrument = "Trombone I, II, and III" }
+  \bookOutputSuffix "trombone"
+  \staffTrombone
+}
+
+\book {
+  \header { instrument = "Percussion" }
+  \bookOutputSuffix "percussion"
+  \sgPercussion
+}
+
+\book {
+  \header { instrument = "Flugelhorn I and II" }
+  \bookOutputSuffix "fulgelhorn"
+  \sgFlughorn
+}
+
 \book {
   \header { instrument = "Tenor Horn" }
   \bookOutputSuffix "tenorHorn"
   \new Staff
-  \hornTenNotes
+    \hornTenNotes
 }
 
 \book {
   \header { instrument = "Baritone Horn" }
   \bookOutputSuffix "baritoneHorn"
   \new Staff
-  \hornBarNotes
+    \hornBarNotes
 }
 
 \book {
   \header { instrument = "Tuba I & II" }
   \bookOutputSuffix "tuba"
-  \new Staff
-  <<
-    \tubaINotes
-    \\
-    \tubaIINotes
-  >>
-
+  \staffTuba
 }
-%}
-
-%{
-\book {
-  \bookOutputSuffix "Flute"
-  \new Staff \fluteNotes
-}
-
-\book {
-  \bookOutputSuffix "ClarinetBFlat"
-  \new Staff \clarinetBFlatNotes
-}
-%}

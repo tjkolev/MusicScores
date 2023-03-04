@@ -2,14 +2,6 @@
 
 \include "helpers.ly"
 
-%{
-\header {
-  title = "Danube Horo"
-  composer = "Diko Iliev"
-  instrument = \markup {Clarient E\flat}
-}
-%}
-
 clarinetEFlatA = {
   \key f \major
 
