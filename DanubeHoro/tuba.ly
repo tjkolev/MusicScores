@@ -249,16 +249,6 @@ tubaIINotes = {
   }
 }
 
-%{
-\score {
-  <<
-  \tubaINotes
-  \\
-  \tubaIINotes
-  >>
-}
-%}
-
 staffTuba = \new Staff \with {
     instrumentName = \markup { \column { \line {"Tuba"} \line {"I & II"} } }
     shortInstrumentName = \markup { \column { \line {"tub"} \line {"I&II"} } }
@@ -268,3 +258,9 @@ staffTuba = \new Staff \with {
   \\
   \tubaIINotes
   >>
+
+%{
+\score {
+  \staffTuba
+}
+%}

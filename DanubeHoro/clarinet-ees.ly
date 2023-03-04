@@ -220,8 +220,8 @@ clarinetEFlatNotes = {
   }
 }
 
-\score {
-  \new Staff \clarinetEFlatNotes
-  \layout {
-  }
+staffClarEFlat = \new Staff \with {
+  instrumentName = \markup { Clarient E\flat}
+  shortInstrumentName = \markup { cl.e\flat }
 }
+\clarinetEFlatNotes

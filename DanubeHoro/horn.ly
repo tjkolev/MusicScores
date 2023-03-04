@@ -263,9 +263,6 @@ sgHorn = \new StaffGroup <<
 
 %{
 \score {
-  <<
-  \new Staff \hornTenNotes
-  \new Staff \hornBarNotes
-  >>
+  \sgHorn
 }
 %}

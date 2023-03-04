@@ -12,7 +12,7 @@
   composer = "Diko Iliev"
 }
 
-% \include "flute.ly"
+\include "flute.ly"
 \include "clarinet-ees.ly"
 \include "drums.ly"
 \include "flugehorn.ly"
@@ -22,11 +22,9 @@
 \book {
   \score {
     <<
-    \new Staff \with {
-      instrumentName = \markup { Clarient E\flat}
-      shortInstrumentName = \markup { Cl.E\flat }
-    }
-    \clarinetEFlatNotes
+    \staffFluteOboe
+
+    \staffClarEFlat
 
     \sgPercussion
 
