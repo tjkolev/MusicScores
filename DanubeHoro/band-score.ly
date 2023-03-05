@@ -15,6 +15,7 @@
 
 \include "flute.ly"
 \include "clarinet-ees.ly"
+\include "bassoon.ly"
 \include "trumpet.ly"
 \include "trombone.ly"
 \include "drums.ly"
@@ -29,6 +30,8 @@
     \staffFluteOboe
 
     \staffClarEFlat
+
+    \staffBassoon
 
     \staffTrumpet
 
@@ -60,6 +63,12 @@
   \header { instrument = \markup {Clarient E\flat} }
   \bookOutputSuffix "clarinetBFlat"
   \staffClarEFlat
+}
+
+\book {
+  \header { instrument = "Bassoon" }
+  \bookOutputSuffix "bsn"
+  \staffBassoon
 }
 
 \book {

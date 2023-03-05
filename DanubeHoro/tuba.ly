@@ -103,7 +103,7 @@ tubaIC = { % 31 bars + 1
   }
   \alternative {
     { f8 r r4 }
-    { f8 r c'4 }
+    { f8 r c'4 \break }
   }
 } % C part
 
@@ -138,7 +138,7 @@ tubaID = {
   }
   \alternative {
     { f8 r c'4 }
-    { f,8 r r4 }
+    { f,8 r r4 \break }
   }
 } % D part
 
@@ -259,8 +259,7 @@ staffTuba = \new Staff \with {
   \tubaIINotes
   >>
 
-%{
+
 \score {
   \staffTuba
 }
-%}
