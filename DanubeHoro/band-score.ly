@@ -15,6 +15,7 @@
 
 \include "flute.ly"
 \include "clarinet-ees.ly"
+\include "trumpet.ly"
 \include "trombone.ly"
 \include "drums.ly"
 \include "flugehorn.ly"
@@ -28,6 +29,8 @@
     \staffFluteOboe
 
     \staffClarEFlat
+
+    \staffTrumpet
 
     \staffTrombone
 
@@ -60,6 +63,12 @@
 }
 
 \book {
+  \header { instrument = "Trumpet I, and II" }
+  \bookOutputSuffix "trumpet"
+  \staffTrumpet
+}
+
+\book {
   \header { instrument = "Trombone I, II, and III" }
   \bookOutputSuffix "trombone"
   \staffTrombone
@@ -73,7 +82,7 @@
 
 \book {
   \header { instrument = "Flugelhorn I and II" }
-  \bookOutputSuffix "fulgelhorn"
+  \bookOutputSuffix "flugelhorn"
   \sgFlughorn
 }
 
