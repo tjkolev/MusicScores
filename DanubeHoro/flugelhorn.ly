@@ -210,22 +210,22 @@ flugehornIINotes = {
   }
 }
 
-sgFlughorn = \new StaffGroup <<
+sgFlugelhorn = \new StaffGroup <<
 
   \new Staff \with {
     instrumentName = "Flugelhorn I"
-    shortInstrumentName = "flgh I"
+    shortInstrumentName = \markup \teeny "flgh I"
   }
   \flugehornINotes
 
   \new Staff \with {
     instrumentName = "Flugelhorn II"
-    shortInstrumentName = "flgh II"
+    shortInstrumentName = \markup \teeny "flgh II"
   }
   \flugehornIINotes
 
 >>
 
 \score {
-  \sgFlughorn
+  \sgFlugelhorn
 }

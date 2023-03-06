@@ -216,7 +216,7 @@ sgPercussion = \new StaffGroup <<
 
   \new DrumStaff \with {
       instrumentName = "Snare"
-      shortInstrumentName = "snr"
+      shortInstrumentName = \markup \teeny "snr"
       \override StaffSymbol.line-count = #1
     }
     <<
@@ -225,7 +225,7 @@ sgPercussion = \new StaffGroup <<
 
   \new DrumStaff \with {
       instrumentName = \markup { \column { \line {"Cymbal"} \line {"Bass Drum"} } }
-      shortInstrumentName = \markup { \column { \line {"cym"} \line {"bdr"} } }
+      shortInstrumentName = \markup \teeny { \column { \line {"cym"} \line {"bdr"} } }
       \override StaffSymbol.line-count = #1
     }
     <<

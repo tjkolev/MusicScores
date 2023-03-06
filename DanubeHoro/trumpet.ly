@@ -257,7 +257,7 @@ trumpetIINotes = {
 
 staffTrumpet = \new Staff \with {
     instrumentName = \markup { \column { \line {"Trumpet"} \line {"I & II"} } }
-    shortInstrumentName = \markup { \column { \line {"trp"} \line {"I,II"} } }
+    shortInstrumentName = \markup \teeny { \column { \line {"trp"} \line {"I,II"} } }
   }
   <<
   \trumpetINotes

@@ -13,13 +13,14 @@
 }
 
 
-\include "flute.ly"
+\include "fluteoboe.ly"
 \include "clarinet-ees.ly"
 \include "bassoon.ly"
+\include "frenchhorn.ly"
 \include "trumpet.ly"
 \include "trombone.ly"
 \include "drums.ly"
-\include "flugehorn.ly"
+\include "flugelhorn.ly"
 \include "horn.ly"
 \include "tuba.ly"
 
@@ -33,13 +34,15 @@
 
     \staffBassoon
 
+    \sgFrenchHorn
+
     \staffTrumpet
 
     \staffTrombone
 
     \sgPercussion
 
-    \sgFlughorn
+    \sgFlugelhorn
 
     \sgHorn
 
@@ -72,6 +75,12 @@
 }
 
 \book {
+  \header { instrument = \markup {French Horn E\flat} }
+  \bookOutputSuffix "frenchhorn"
+  \sgFrenchHorn
+}
+
+\book {
   \header { instrument = "Trumpet I, and II" }
   \bookOutputSuffix "trumpet"
   \staffTrumpet
@@ -92,7 +101,7 @@
 \book {
   \header { instrument = "Flugelhorn I and II" }
   \bookOutputSuffix "flugelhorn"
-  \sgFlughorn
+  \sgFlugelhorn
 }
 
 \book {

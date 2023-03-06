@@ -252,7 +252,7 @@ oboeNotes = {
 
 staffFluteOboe = \new Staff \with {
     instrumentName = \markup { \column { \line {"Flute"} \line {"Oboe"} } }
-    shortInstrumentName = \markup { \column { \line {"fl"} \line {"ob"} } }
+    shortInstrumentName = \markup \teeny { \column { \line {"fl"} \line {"ob"} } }
   }
   <<
   \fluteNotes

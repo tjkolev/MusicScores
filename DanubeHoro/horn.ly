@@ -249,13 +249,13 @@ sgHorn = \new StaffGroup <<
 
   \new Staff \with {
     instrumentName = "Tenor Horn"
-    shortInstrumentName = "ten.h"
+    shortInstrumentName = \markup \teeny "tenHrn"
   }
   \hornTenNotes
 
   \new Staff \with {
     instrumentName = "Baritone Horn"
-    shortInstrumentName = "bar.h"
+    shortInstrumentName = \markup \teeny "barHrn"
   }
   \hornBarNotes
 

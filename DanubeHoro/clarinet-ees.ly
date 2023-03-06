@@ -214,6 +214,6 @@ clarinetEFlatNotes = {
 
 staffClarEFlat = \new Staff \with {
   instrumentName = \markup { Clarient E\flat}
-  shortInstrumentName = \markup { cl.e\flat }
+  shortInstrumentName = \markup \teeny { cl.e\flat }
 }
 \clarinetEFlatNotes

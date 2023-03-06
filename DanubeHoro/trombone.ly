@@ -14,11 +14,11 @@ trombA = {
   \sectionLabel "Part A"
   \repeat volta 2 {
     | \rpt 4 { r8 <c f aes>[ r <c f aes>]} \break
-    | \rpt 2 { r <des f bes>[ r <des f bes>] } | r <c f aes>4.:8 | <c f aes>2:8^"..." \break
+    | \rpt 2 { r <des f bes>[ r <des f bes>] } | r <c f aes>4.:8 | <c f aes>2:8^"...." \break
     | \rpt 4 { r8 <c e bes'>[ r <c e bes'>] } \break
-    | \rpt 2 { r8 <c e bes'>[ r <c e bes'>] } | r <c f aes>4.:8 | <c f aes>2:8^"..." \break
+    | \rpt 2 { r8 <c e bes'>[ r <c e bes'>] } | r <c f aes>4.:8 | <c f aes>2:8^"...." \break
     | \rpt 4 { r8 <c f aes>[ r <c f aes>]} \break
-    | \rpt 2 { r8 <d f bes>[ r <d f bes>]} | r <c f aes>4.:8 | <c f aes>2:8^"..." \break
+    | \rpt 2 { r8 <d f bes>[ r <d f bes>]} | r <c f aes>4.:8 | <c f aes>2:8^"...." \break
     | \rpt 2 { r8 <c f aes>[ r <c f aes>]} | r <des f bes>[ r <des f bes>] | r <des f bes>4.:8 \break
     | r8 <c e bes'>[ r <c e bes'>] | r <c e bes'>[ r <c f aes>] | r <c e bes'>[ r <c e bes'>]
   }
@@ -55,7 +55,7 @@ trombC = {
     | r8 <f a c>[ r <f a c>] | r8 <f a c>[ r <f c' ees>] | \rpt 2 { r <f bes des>[ r <f bes des>] } \break
     | \rpt 2 { r <f c' ees>[ r <f c' ees>] } | r <f bes des>[ r <f bes des>] | r <f bes des>4.:8 \break
     | \rpt 2 { r8 <f a c>[ r <f a c>] } | r <f a c>4.:8 \break
-    | <f a c>2:8^"..." | r8 <f a c>[ r <f a c>] | r8 <f bes des>[ r <f a c>] \break
+    | <f a c>2:8^"...." | r8 <f a c>[ r <f a c>] | r8 <f bes des>[ r <f a c>] \break
     | \rpt 3 { r8 <f a c>[ r <f a c>] } | r <f a c>[ r <f c' des>] \break
     | \rpt 2 { r8 <f bes des>[ r <f bes des>] } | r <f bes des>4.:8 | r8 <ees ges bes>[ r <ees ges bes>] \break
     | \grace s8 \rpt 2 { r8 <ees ges bes>[ r <ees ges bes>] } | r8 <f a c>[ r <f bes des>] \break
@@ -129,7 +129,7 @@ tromboneNotes = {
 
 staffTrombone = \new Staff \with {
   instrumentName = \markup { \column { \line {"Trombone"} \line {"I, II, III"} } }
-  shortInstrumentName = \markup { \column { \line {"trmb"} \line {"123"} } }
+  shortInstrumentName = \markup \teeny { \column { \line {"trmb"} \line {"I,II,III"} } }
 }
 \tromboneNotes
 

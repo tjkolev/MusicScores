@@ -126,7 +126,7 @@ bassoonNotes = {
 
 staffBassoon = \new Staff \with {
   instrumentName = "Bassoon"
-  shortInstrumentName = "bsn"
+  shortInstrumentName = \markup \teeny "bsn"
 }
 \bassoonNotes
 
