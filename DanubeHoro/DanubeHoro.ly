@@ -55,12 +55,15 @@
    \layout {
 
    }
+
+   \midi {
+   }
   }
 }
 
 
 \book {
-  \header { instrument = "Flue and Oboe" }
+  \header { instrument = "Flute and Oboe" }
   \bookOutputSuffix "fluteOboe"
   \staffFluteOboe
 }
@@ -79,7 +82,7 @@
 
 \book {
   \header { instrument = "Bassoon" }
-  \bookOutputSuffix "bsn"
+  \bookOutputSuffix "bassoon"
   \staffBassoon
 }
 
