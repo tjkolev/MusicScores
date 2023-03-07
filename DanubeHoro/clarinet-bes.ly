@@ -2,230 +2,277 @@
 
 \include "helpers.ly"
 
-%{
-\header {
-  title = "Danube Horo"
-  composer = "Diko Iliev"
-  instrument = \markup {Clarient B\flat}
-}
-%}
+clarinetIA = {
+  \sectionLabel "Intro"
+  \key bes \major
+    | \trl {d''8( ees d)} c r | \trl {c( d c)} bes[ r16 a] | c8[ r16 c] bes8[ r16 a] | g8 r r4 \break
 
-clarinetBFlatA = {
-  \key f \major
-    
-  | \trl {a''8( bes a)} g r
-  | \trl {g( a g)} f[ r16 e]
-  | g8[ r16 g16] f8[ r16 e16]
-  | d8 r8 r4 \break
-
+  \sectionLabel "Part A"
   \repeat volta 2 {
-    
-    | \trl {f8( e) d} \trl {f( e) d}
-    | a\prall r8 r4
-    | \trl {f'8( e) d} \trl {f( e) d}
-    | a'\prall r8 r4 \break
-    
-    | \trl {bes8( a) g} \trl {bes( a) g}
-    | d\prall r8 r4
-    | \trl {a'8( gis) a} \trl {f( e) f}
-    | d\prall r8 r4 \break
-    
-    | \trl {e8( d) cis} \trl {e( d) cis}
-    | e\prall r8 r4
-    | \trl {a8( g) f} \trl {a( g) f}
-    | e\prall r8 r4 \break
-    
-    | a2 \startTrillSpan ( a2)
-    | \trl {a8 \stopTrillSpan ( gis) a} \trl {f( e) f}
-    | d\prall r8 r4 \break
-    
-    | \trl {f8( e) d} \trl {f( e) d}
-    | a\prall r8 r4
-    | \trl {f'8( e) d} \trl {f( e) d}
-    | a'\prall r8 r4 \break
-    
-    | \trl {bes8( a) g} \trl {bes( a) g}
-    | d\prall r8 r4
-    | \trl {a'8( gis) a} \trl {f( e) f}
-    | d\prall r8 r4 \break
-    
-    % \key bes \major % print mistake?
-    | f2( f8)[ e( g f)]
-    | e[( d cis bes)] g2 \break
-    
-    | \trl {a8( bes a)} e'\prall r
-    | \trl {a,( bes a)} d\prall r
-    | \trl {a'( gis a)} \trl {f( e f)}
+    | \rpt 2 { \trl {bes,8( a) g} } | d\prall r r4 | \rpt 2 { \trl {bes'8( a) g} } | d'\prall r r4 \break
+    | \rpt 2 { \trl {ees8( d) c} } | g\prall r r4 | \trl {d'8( cis) d} \trl {bes( a) bes} | g\prall r r4 \break
+    | \rpt 2 { \trl {a8( g) fis} } | a\prall r r4 | \trl {d8( c) bes} \trl {c( bes a)} | g\prall r r4 \break
+    | d'2(\startTrillSpan | d2) | \trl {d8 \stopTrillSpan ( cis) d} \trl {bes( a) bes} | g\prall r r4 \break
+    | \rpt 2 { \rpt 2 { \trl {bes8( a) g} } | d'\prall r r4 } \break
+    | \rpt 2 { \trl {ees8( d) c} } | g\prall r r4 | \trl {d'8( cis) d} \trl {bes( a) bes} | g\prall r r4 \break
+    | bes'2( | bes8)[ a( c bes)] | a([ g fis ees)] | c2 \break
+    | \trl {d8( ees d)} a'\prall r | \trl {d,8( ees d)} g\prall r | \trl {d'( cis d)} \trl {bes( a bes)}
   }
   \alternative {
-    % page 110
-    { d r r4 \break }
-    { d8 r a4 }
+    { g8 r r4 \break }
+    { g8 r d4 }
   }
 } % A part
 
-clarinetBFlatB = {
-  % page 111
+clarinetIInIIIA = {
+  \sectionLabel "Intro"
+  \key bes \major
+  %| \trl {a'8( bes a)} g r | \trl {g( a g)} f[ r16 e] | g8 r f[ r16 e] | d8 r r4 \break
+  | \trl {d'8( ees d)} c r8 | \trl {c( d c)} bes8[ r16 a16] | c8[ r16 c16] bes8[ r16 a16] | g8 r8 r4 \break
+
+  \sectionLabel "Part A"
   \repeat volta 2 {
-    | d8\prall r f\prall r
-    | a\prall r \trl {f( e f)}
-    | a\prall r \trl {d,( f f)} \break
-    
-    | \trl {f( a) a} d r
-    | \trl {a( bes a)} g[ g]
-    | \trl {g( a g)} \trl {f( e d)}
-    | e2( \break
-    
-    | e2)
-    | cis8\prall r a\prall r
-    | cis8\prall r e\prall r
-    | g\prall r \trl {a,( cis) cis} \break
-    
-    | \trl {cis( e) e} g r
-    | \trl {d( c d)} a r
-    | \trl {g'( b a)} f8[ r16 g16]
-    | a4. a8 \break
-    
-    | g8.\prall[( f16)] e8.\prall[( d16)]
-    | d8\prall r f\prall r
-    | a\prall r \trl {f( e f)}
-    | a r \trl {d,( f) f} \break
-    
-    | \trl {f( a) a} d r
-    | \trl {d( c) c} \trl {c c c}
-    | \trl {c( d c)} \trl {bes( a g)} \break
-    
-    | a2( a8)[ g( a bes)] | a[ a\prall( gis a)] \break
-    
-    | e' r r4 | g,8[ g\prall( fis g)] | d' r r4 | r8 f,\prall[( e f)] \break
-    
-    | g4 a | d,2(
-    
+    | d2( | d8)[ d( \acc f ees d)] | g2( | g8)[ g( a bes)] \break
+    | ees,2( | ees8)[ g( fis g)] | d2( | d4) r4 \break
+    | c2( | c8)[ c( d c)] | a'2( | a8)[ g( fis ees)] \break
+    | d4 c | bes c | d2( | d8) r8 r4 \break
+    | d2( | d8)[ d]( \acc f ees[ d)] | g2( | g8)[ g( a bes)] \break
+    | ees,2( | ees8)[ g( fis g)] | d2( | d4) r4 \break
+    | bes'2( | bes8)[ a( c bes)] | a([ g fis ees)] | c2 \break
+    | \trl {d'8( ees d)} <d fis>\prall r | \trl {d( ees d)} <bes d>\prall r | \trl {d( cis d)} \trl {bes( a bes)}
   }
   \alternative {
-    % page 119
-    { d8) r a4 }
-    { d8 \repeatTie r r4 }
+    { g8 r8 r4 \break }
+    { g8 r8 d4 }
   }
-  
-  \break
+} % A part
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clarinetIB = {
+  \sectionLabel "Part B"
+  \repeat volta 2 {
+    | g8\prall r g\prall r | bes\prall r \trl {g( fis g)} | bes\prall r \trl {g( bes) bes} \break
+    | \trl {bes( d) d} g, r | \trl {bes( d bes)} a[ a] | \trl {a( bes a)} g4 | fis2( \break
+    | fis2) | fis8\prall r d\prall r | fis\prall r a\prall r | c\prall r \trl {d,( fis) fis} \break
+    | \trl {fis8( a) a} c r | \trl {bes( a bes)} g r | \trl {a( bes a)} g[ r16 a] | bes4. bes8 \break
+    | a8.\prall([ g16)] fis8.\prall([ g16)] | g8\prall r g\prall r | bes\prall r \trl {g( fis g)} | bes r \trl {g( bes) bes} \break
+    | \trl {bes8( bes) bes} d r | \trl {ees( d) d} \trl {d( d d)} | \trl {d( ees d)} \trl {c( bes a)} \break
+    | bes2( | bes8)[ a( bes c)] | bes[ bes bes bes] \break
+    | c8 r r4 | a8[ a\prall( gis a)] | bes r r4 | r8 g\prall([ fis g)] \break
+    | a4 fis | g2(
+  }
+  \alternative {
+    { g8) r d4 }
+    { g8 r r4 \break }
+  }
 } % B part
 
-clarinetBFlatC = {
-  % page 120
-  \key bes \major
+clarinetIInIIIB = {
+  \sectionLabel "Part B"
   \repeat volta 2 {
-    | r2 | r2 | r4 \trl {bes'8[( a) g]} | \trl {fis[( g) a]} d, r \break
-    
-    | r2 | r2 | r4 \trl {d'8[( c) bes]} | \trl {c[( bes) a]} g r \break
-    
-    | r2 | r2 | r4 \trl {g8[( fis g)]} | \trl {bes[( a bes)]} d r \break
-    
-    | \trl {a8( bes a)} d r
-    | \trl {a( bes a)} d r
-    | \trl {a( bes a)} \trl {g( fis g)} \break
-    
-    | \trl {a( g fis)} \trl {ees( d c)} | r2 | r2 \break
-    
-    | r4 \trl {bes'8( a) g} | \trl {fis( g) a} d, r8 | r2 | r2 \break
-    
-    | r4 \trl {d'8( c) bes} | \trl {c( bes) a} g r8 | r2 | r2 \break
-    
-    | r4 \trl {c,8( b) c} | \trl {ees( d) ees} g r8 | \trl {a( bes a)} g r \break
-    
-    | \trl {g( a g)} fis[ r16 ees16] | d2(
+    | g8\prall r <g bes>\prall r | <bes d>\prall r \trl {<g bes>( <fis a> <g bes>)} | <bes d>2( \break
+    | <bes d>2) | \trl {<bes d>8( <c ees> <bes d>)} <a c>[ <a c>] | \trl { <a c>( <bes d> <a c>)} { << { \trl {bes8( a g)}} \\ { g4 } >> } | <fis a>2( \break
+    | <fis a>2) | fis8\prall r <d a'>\prall r | <d fis>\prall r <fis a>\prall r | <a c>2( \break
+    | <a c>2) | \trl {<bes g'>8( <a fis'> <bes g'>)} <bes d> r | \trl {<a c>( <bes d> <a c>)} <g bes>[ r16 <a c>16] | <bes d>4. <bes d>8 \break
+    | <a c>8.\prall([ <g bes>16)] <fis a>8.\prall([ g16)] | g8\prall r <g bes>\prall r | <bes d>\prall r \trl {<g bes>( <fis a> <g bes>)} | <bes d>2( \break
+    | <bes d>2) | \trl {<ees g>8( <d f>) <d f>} \trl {<d f> <d f> <d f>} | \trl {<d f>( <ees g> <d f>)} \trl {<c ees>( <bes d> <a c>)} \break
+    | <bes d>2( | <bes d>8)[ <a c>( <bes d> <c ees>)] | <bes d>[ d\prall( cis d)] \break
+    | <c a'>8 r8 r4 | <a c>8[ <a c>\prall( <gis b> <a c>)] | <bes! g'> r r4 | r8 <g bes>\prall([ <fis a> <g bes>)] \break
+    | <a c>4 <fis d'>4 | g2(
   }
   \alternative {
-    % page 128
-    { d8) r r4 }
-    { d8 \repeatTie r a4}
+    { g8) r d4 }
+    { g8 \repeatTie r r4 \break }
   }
-  
-  \break
+} % B part
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clarinetIC = {
+  \sectionLabel "Part C"
+  \key ees \major
+  \repeat volta 2 {
+    | r2 | r2 | r4 \trl {ees8( d) c} | \trl {b( c) d} g, r \break
+    | r2 | r2 | r4 \trl {g'8( f) ees} | \trl {f( ees) d} c r \break
+    | r2 | r2 | r4 \trl {c8( b c)} | \trl {ees( d ees)} g r \break
+    | \rpt 2 { \trl {d8( ees d)} g r } | \trl {d( ees d)} \trl {c( b c)} \break
+    | \trl {d8( c b)} \trl {aes( g f)} | r2 | r2 \break
+    | r4 \trl {ees'8( d) c} | \trl {b( c d)} g, r | r2 |r2 \break
+    | r4 \trl {g'8( f) ees} | \trl {f( ees) d} c r | r2 | r2 \break
+    | \grace s8 r4 \trl {f8( e) f} | \trl {aes( g) aes} c, r | \trl {d( ees d)} c r \break
+    | \trl {c8( d c)} b[ r16 aes] | g2(
+  }
+  \alternative {
+    { g8) r r4 }
+    { g8 \repeatTie r d'4 \break }
+  }
 } % C part
 
-clarinetBFlatD = {
-  % page 129
-  \key f \major
+clarinetIInIIIC = {
+  \sectionLabel "Part C"
+  \key ees \major
   \repeat volta 2 {
-    | \repeat unfold 3 {r8 a'[ r8 a]} | r8 a4.:8 \break
-    
-    | a8[ c\prall( b c)] | d[ r16 c] bes!8.\prall[ a16] | g2( | g4) r \break
-    
-    | \repeat unfold 3 {r8 g[ r8 g]} | r8 g4.:8 \break
-    
-    | g8[ g\prall( fis g)] | a8.[ g16] f!8.\prall[( e16)] | d2(
+    | b2( | bes8)[ c( aes f)] | g2( | g2) \break
+    | d'2( | d8)[ f( ees b)] | c2( | c8)[ c( d ees)] \break
+    | f2 | \acc f8 ees([ d c b)] | ees2( | ees4) r4 \break
+    | \repeat unfold 2 {\trl {d8( ees d)} b r} | \trl {d( es d)} \trl {c( b c)} \break
+    | \trl {d( c b)} \trl {aes( g f)} | b2( | bes8)[ d( aes f)] \break
+    | g2( | g) | d'( | d8)[ f( ees b)] \break
+    | c2( | c2) | r8 c([ d ees)] | f2 \break
+    | \acc f8 ees([ d c b)] | aes2 | << { \trl {d8( ees d)} } \\ { b4 } >> c8 r \break
+    | \trl {c( d c)} b[ r16 aes] | g2(
+
   }
   \alternative {
-    % page 132
-    { d8) r a4}
-    { d8 \repeatTie r r4 }
+    { g8) r8 r4 }
+    { g8\repeatTie r8 d'4 \break}
   }
-  
-  \break  
+} % C part
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clarinetID = {
+  \sectionLabel "Part D"
+  \key bes \major
+  \repeat volta 2 {
+    | \rpt 3 { r8 bes'[ r bes]} | r bes4.:8 \break
+    | bes8[ f\prall( e f)] | g[ r16 f] ees!8.\prall[ d16] | ees2( | ees4) r4 \break
+    | r8^"div." <a c>[ r <a c>] | \rpt 2 { r8 <a c>[ r <a c>]} | r8 <a c>4.:8 \break
+    | <a c>8[ a\prall( fis a)] | bes!8.[ a16] g!8.\prall( fis16)] | g2(
+  }
+  \alternative {
+    { g8) r d4 }
+    { g8 \repeatTie r r4 \break }
+  }
 } % D part
 
-clarinetBFlatE = {
-  % page 133
-  \key d \major
+clarinetIInIIID = {
+  \sectionLabel "Part D"
+  \key bes \major
   \repeat volta 2 {
-    | a'2( | a8) r \trl {g( a g)} | fis2( | fis8)[ a,( d fis)] \break
-    
-    | a4( b8.)[ a16]( | d8.)[ a16]( g8.)[ fis16] | e2( | e8) r g4 \break
-    
-    | cis2( | cis8) r \trl {b( cis b)} | g2( | g8) r \trl {b( cis b)} \break
-    
-    | g8 r \trl {b( cis b)} | g[ r16 b] a8.[( gis16)] | a2( | a8)[ a, d fis] \break
-    
-    | a2( | a8) r \trl {g( a g)} | fis2( | fis8)[ a,( d fis)] \break
-    
-    | a4( b8.)[ a16]( | d8.)[ a16]( g8.\prall)[ fis16] | e2( | e8) r a,4 \break
-    
-    | g'2( | g8) r \trl {g( a g)} | fis2( | fis8) r \trl {fis( g fis)} \break
-    
-    | e8 r \trl {fis( g fis)} | e[ r16 g] fis8.([ e16)] | d2(
+    | \repeat unfold 3 { r8 <d g>[ r <d g>] } | r <d g>4.:8 \break
+    | <d g>8[ d\prall( cis d)] | b[ r16 d] c8.\prall[ b16] | c2( | c4) r4 \break
+    | \rpt 3 { r8 <d fis>[ r <d fis>]} | r8 <d fis>4.:8 \break
+    | <c a'>8[ c\prall( b c)] | d8.[ <c d>16] <bes! d>8.\prall([ <a c>16)] | <bes d>2(
   }
   \alternative {
-    % page 140
-    { d8)[ a( d fis)] \break }
-    { d8 \repeatTie r fis4 }
+    { <bes g>8) r8 d4 }
+    { <bes g>8 \repeatTie r8 r4 \break }
+  }
+} % D part
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clarinetIE = {
+  \sectionLabel "Part E"
+  \key g \major
+  \repeat volta 2 {
+    | b2( | b8) r \trl {a( b a)} | g2( | g8)[ d( g b)] \break
+    | b4( c8.)[ b16]( | d8.)[ b16]( a8.)[ g16] | fis2( fis8) r a4 \break
+    | d2( | d8) r \trl {c( d c)} | a2( | a8) r \trl {c( d c)} \break
+    | a8 r \trl {c( d c)} | a8[ r16 c] b8.([ ais16)] | b2( | b8)[ d,( g b)] \break
+    | b2( | b8) r \trl {a( b a)} | g2( | g8)[ d( g b)] \break
+    | b4( c8.)[ b16]( | b8.)[ b16] a8.\prall([ g16)] | fis2( | fis8) r d4 \break
+    | a'2( | a8) r \trl {a( b a)} | g2( | g8) r \trl {g( a g)} \break
+    | fis8 r \trl {g( a g)} | fis8[ r16 a] g8.([ fis16)] | g2(
+  }
+  \alternative {
+    { g8)[ d( g b)] \break }
+    { g8 \repeatTie r b4 }
   }
 } % E part
 
-clarinetBFlatF = {
+clarinetIInIIIE = {
+  \sectionLabel "Part E"
+  \key g \major
   \repeat volta 2 {
-    | \repeat unfold 3 { r8 b[ r b] } \break
-    
-    | r8 b4.:8 | e,2( | e8)[ e(\prall dis e)] | fis4. fis8 \break
-    
-    | e8.\prall([ d16)] cis8.\prall([ b16)] | \repeat unfold 3 {r8 b'[r b] } | r8 b4.:8 \break
-    
-    | \trl {fis8( g fis)} e r | \trl {e( fis e)} d[ r16 cis] | e8[ r16 e] d8[ cis]
+    | d2( | d8) r \trl {c( d c)} | b2( | b8)[ d,( g b)] \break
+    | d4( e8.)[ d16]( | g8.)[ d16]( c8.)[ b16] | a2( | a8) r c4 \break
+    | fis2( | fis8) r \trl {e( fis e)} | c2( | c8) r \trl {e( fis e)} \break
+    | c8 r \trl {e( fis e)} | c8[ r16 e16] d8.[( cis16)] | d2( | d8)[ d,( g b)] \break
+    | d2( | d8) r \trl {c( d c)} | b2( | b8)[ d,( g b)] \break
+    | d4( e8.)[ d16]( | g8.)[ d16] c8.\prall( b16) | a2( | a8) r d,4 \break
+    | c'2( | c8) r \trl {c( d c)} | b2( | b8) r \trl { b c b } \break
+    | a8 r \trl {b( c b)} | a8[ r16 c16] b8.[( a16)] | g2(
   }
   \alternative {
-    { b8 r fis'4 }
-    { b,8 r r4 }
+    { g8)[ d( g b)] \break }
+    { g8 \repeatTie r <dis' a'>4 }
+  }
+} % E part
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clarinetIF = {
+  \sectionLabel "Part F"
+  \repeat volta 2 {
+    | \rpt 2 { r8 b[ r b] } | r c[ r c] \break
+    | r8 b4.:8 | fis2( | fis8)[ fis\prall( e fis)] | g4. g8 \break
+    | a8.\prall([ g16)] fis8.\prall([ e16)] | \rpt 2 { r8 b'[ r b] } r c[ r c] | r b4.:8 \break
+    | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis]
+  }
+  \alternative {
+    { e8 r b'4 }
+    { e,8 r r4 }
   }
 } % F part
 
-clarinetBFlatNotes = {
-  \clef treble
+clarinetIInIIIF = {
+  \sectionLabel "Part F"
+  \repeat volta 2 {
+    | \repeat unfold 2 { r8 <e g>[ r <e g>]} | r8 <e a>[ r <e a>] \break
+    | r <e g>4.:8 | a,2( | a8)[ a\prall( g a)] | b4. b8 \break
+    | a8.\prall([ g16)] fis8.\prall([ e16)] | \repeat unfold 2 { r8 <e' g>[ r <e g>]} | r8 <e a>[ r <e a>] | r <e g>4.:8 \break
+    | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
+  }
+  \alternative {
+    { e8 r <dis' a'>4 }
+    { e,8 r r4 }
+  }
+} % F part
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+clarinetINotes = {
   \time 2/4
-  \relative {
-    \clarinetBFlatA
-    \clarinetBFlatB
-    \clarinetBFlatC
-    \clarinetBFlatD
-    \clarinetBFlatE
-    \clarinetBFlatF
+  \relative c' {
+    \clarinetIA
+    \clarinetIB
+    \clarinetIC
+    \clarinetID
+    \clarinetIE
+    \clarinetIF
   }
 }
 
+
+clarinetIInIIINotes = {
+  \time 2/4
+  \relative c' {
+    \clarinetIInIIIA
+    \clarinetIInIIIB
+    \clarinetIInIIIC
+    \clarinetIInIIID
+    \clarinetIInIIIE
+    \clarinetIInIIIF
+  }
+}
+
+sgClarinetBFlat = \new StaffGroup <<
+  \new Staff \with {
+    instrumentName = \markup { \column { \line { Clarinet B\flat} \line {"I"} } }
+    shortInstrumentName = \markup \teeny { cl.b\flat I }
+  }
+  \clarinetINotes
+
+  \new Staff \with {
+    instrumentName = \markup { \column { \line { Clarinet B\flat} \line {"II & III"} } }
+    shortInstrumentName = \markup \teeny { cl.b\flat II,III }
+  }
+  \clarinetIInIIINotes
+>>
+
 \score {
-  \new Staff \clarinetBFlatNotes
-  \layout {
-    indent = #0
-  }
-  \midi {
-  }
+  \sgClarinetBFlat
 }

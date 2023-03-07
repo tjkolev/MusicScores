@@ -9,12 +9,13 @@
 
 \header {
   title = "Danube Horo"
-  composer = "Diko Iliev"
+  composer = "Diko Iliev, 1937"
 }
 
 
 \include "fluteoboe.ly"
 \include "clarinet-ees.ly"
+\include "clarinet-bes.ly"
 \include "bassoon.ly"
 \include "frenchhorn.ly"
 \include "trumpet.ly"
@@ -31,6 +32,8 @@
     \staffFluteOboe
 
     \staffClarEFlat
+
+    \sgClarinetBFlat
 
     \staffBassoon
 
@@ -64,8 +67,14 @@
 
 \book {
   \header { instrument = \markup {Clarient E\flat} }
-  \bookOutputSuffix "clarinetBFlat"
+  \bookOutputSuffix "clarinetEFlat"
   \staffClarEFlat
+}
+
+\book {
+  \header { instrument = \markup {Clarient B\flat} }
+  \bookOutputSuffix "clarinetBFlat"
+  \sgClarinetBFlat
 }
 
 \book {
