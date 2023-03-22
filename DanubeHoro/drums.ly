@@ -13,14 +13,14 @@ bd - bass drum
 snPhBase = {r8 8[ r8 8]}
 rpts = #(define-music-function (cnt) (integer?)
   #{
-    { \repeat unfold $cnt \snPhBase }
+    { \rpt $cnt \snPhBase }
   #}
 )
 
 bsPhBase = {8[ r8 8] r8}
 rptb = #(define-music-function (cnt) (integer?)
   #{
-    { \repeat unfold $cnt \bsPhBase }
+    { \rpt $cnt \bsPhBase }
   #}
 )
 
@@ -48,7 +48,7 @@ snareB = \drummode {
     | \rpts 3 | r8 4.:8 | \rpts 3 \break
     | r8 4.:8 | \rpts 3 | r8 4.:8 | \rpts 3 \break
     | \rpts 4 | r8 4.:8 | \rpts 2 \break
-    | \repeat unfold 3 {r8 4.:8 | 8 r8 r4 } | r8 4.:8 \break
+    | \rpt 3 {r8 4.:8 | 8 r8 r4 } | r8 4.:8 \break
     | \rpts 1 | r8 4.:8
   }
   \alternative {
@@ -133,7 +133,7 @@ bassncymB = \drummode {
     | \rptb 3 | 4 r4 | \rptb 3 \break
     | 4 r4 | \rptb 3 | 4 r4 | \rptb 3 \break
     | \rptb 4 | 4 r4 | \rptb 2 \break
-    | \repeat unfold 2 { 8[ r8 8] r8 | 8 r8 r4 } | 8 r8 8 r8 | 8 r8 r4 | 4 r4 \break
+    | \rpt 2 { 8[ r8 8] r8 | 8 r8 r4 } | 8 r8 8 r8 | 8 r8 r4 | 4 r4 \break
     | \rptb 2
   }
   \alternative {

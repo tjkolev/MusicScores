@@ -72,8 +72,8 @@ flugehornC = {
     | d'2( | d8)[ f( ees b)] | c2( | c8)[ c( d ees)] \break
     | f2 | \acc f8 ees([ d c b)] | ees2( | ees4) r4 \break
 
-    | \tag #'flghI { \repeat unfold 2 {\trl {d8( ees d)} g r} }
-      \tag #'flghII { \repeat unfold 2 {\trl {d8( ees d)} b r} }
+    | \tag #'flghI { \rpt 2 {\trl {d8( ees d)} g r} }
+      \tag #'flghII { \rpt 2 {\trl {d8( ees d)} b r} }
 
     | \trl {d( es d)} \trl {c( b c)} \break
     | \trl {d( c b)} \trl {aes( g f)} | b2( | bes8)[ c( aes f)] \break
@@ -92,9 +92,9 @@ flugehornD = {
   \sectionLabel "Part D"
   \key bes \major
   \repeat volta 2 {
-    | \repeat unfold 3 { r8 d[ r d] } | r d4.:8 \break
+    | \rpt 3 { r8 d[ r d] } | r d4.:8 \break
     | d8[ f\prall( e f)] | g[ r16 f] ees!8.\prall[ d16] | c2( | c4) r4 \break
-    | \repeat unfold 3 { r8 c[ r c]} | r c4.:8 \break
+    | \rpt 3 { r8 c[ r c]} | r c4.:8 \break
     | c8[ c\prall( b c)] | d8.[ c16] bes!8.\prall([ a16)] | g2(
   }
   \alternative {
@@ -107,9 +107,9 @@ flugehornDII = {
   \sectionLabel "Part D"
   \key bes \major
   \repeat volta 2 {
-    | \repeat unfold 3 { r8 bes[ r bes] } | r bes4.:8 \break
+    | \rpt 3 { r8 bes[ r bes] } | r bes4.:8 \break
     | bes8[ d\prall( cis d)] | b[ r16 d] c!8.\prall[ b16] | c2( | c4) r4 \break
-    | \repeat unfold 3 { r8 a[ r a]} | r a4.:8 \break
+    | \rpt 3 { r8 a[ r a]} | r a4.:8 \break
     | a8[ a\prall( gis a)] | bes!8.[ a16] g!8.\prall([ fis16)] | g2(
   }
   \alternative {
@@ -159,9 +159,9 @@ flugehornEII = {
 flugehornF = {
   \sectionLabel "Part F"
   \repeat volta 2 {
-    | \repeat unfold 3 { r8 e[ r e]} \break
+    | \rpt 3 { r8 e[ r e]} \break
     | r e4.:8 | a,2( | a8)[ a\prall( g a)] | b4. b8 \break
-    | a8.\prall([ g16)] fis8.\prall([ e16)] | \repeat unfold 3 { r8 e'[ r e]} | r e4.:8 \break
+    | a8.\prall([ g16)] fis8.\prall([ e16)] | \rpt 3 { r8 e'[ r e]} | r e4.:8 \break
     | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
   }
   \alternative {
@@ -173,9 +173,9 @@ flugehornF = {
 flugehornFII = {
   \sectionLabel "Part F"
   \repeat volta 2 {
-    | \repeat unfold 2 { r8 b[ r b]} | r8 c[ r c] \break
+    | \rpt 2 { r8 b[ r b]} | r8 c[ r c] \break
     | r b4.:8 | fis2( | fis8)[ fis\prall( e fis)] | g4. g8 \break
-    | a8.\prall([ g16)] fis8.\prall([ e16)] | \repeat unfold 3 { r8 b'[ r b]} | r b4.:8 \break
+    | a8.\prall([ g16)] fis8.\prall([ e16)] | \rpt 3 { r8 b'[ r b]} | r b4.:8 \break
     | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
   }
   \alternative {

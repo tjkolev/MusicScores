@@ -116,7 +116,7 @@ clarinetIInIIIC = {
     | b2( | bes8)[ c( aes f)] | g2( | g2) \break
     | d'2( | d8)[ f( ees b)] | c2( | c8)[ c( d ees)] \break
     | f2 | \acc f8 ees([ d c b)] | ees2( | ees4) r4 \break
-    | \repeat unfold 2 {\trl {d8( ees d)} b r} | \trl {d( es d)} \trl {c( b c)} \break
+    | \rpt 2 {\trl {d8( ees d)} b r} | \trl {d( es d)} \trl {c( b c)} \break
     | \trl {d( c b)} \trl {aes( g f)} | b2( | bes8)[ c( aes f)] \break
     | g2( | g) | d'( | d8)[ f( ees b)] \break
     | c2( | c2) | r8 c([ d ees)] | f2 \break
@@ -151,7 +151,7 @@ clarinetIInIIID = {
   \sectionLabel "Part D"
   \key bes \major
   \repeat volta 2 {
-    | \repeat unfold 3 { r8 <d g>[ r <d g>] } | r <d g>4.:8 \break
+    | \rpt 3 { r8 <d g>[ r <d g>] } | r <d g>4.:8 \break
     | <d g>8[ d\prall( cis d)] | b[ r16 d] c8.\prall[ b16] | c2( | c4) r4 \break
     | \rpt 3 { r8 <d fis>[ r <d fis>]} | r8 <d fis>4.:8 \break
     | <c a'>8[ c\prall( b c)] | << {d8.[ d16]} \\ {d8.[ c16]} >> <bes! d>8.\prall([ <a c>16)] | <bes d>2(
@@ -221,9 +221,9 @@ clarinetIF = {
 clarinetIInIIIF = {
   \sectionLabel "Part F"
   \repeat volta 2 {
-    | \repeat unfold 2 { r8 <e g>[ r <e g>]} | r8 <e a>[ r <e a>] \break
+    | \rpt 2 { r8 <e g>[ r <e g>]} | r8 <e a>[ r <e a>] \break
     | r <e g>4.:8 | a,2( | a8)[ a\prall( g a)] | b4. b8 \break
-    | a8.\prall([ g16)] fis8.\prall([ e16)] | \repeat unfold 2 { r8 <e' g>[ r <e g>]} | r8 <e a>[ r <e a>] | r <e g>4.:8 \break
+    | a8.\prall([ g16)] fis8.\prall([ e16)] | \rpt 2 { r8 <e' g>[ r <e g>]} | r8 <e a>[ r <e a>] | r <e g>4.:8 \break
     | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
   }
   \alternative {
