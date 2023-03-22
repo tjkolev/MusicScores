@@ -60,7 +60,7 @@ clarinetEFlatB = {
   \repeat volta 2 {
     | d8\prall r f\prall r
     | a\prall r \trl {f( e f)}
-    | a\prall r \trl {d,( f f)} \break
+    | a\prall r \trl {d,( f) f} \break
 
     | \trl {f( a) a} d r
     | \trl {a( bes a)} g[ g]
@@ -73,8 +73,8 @@ clarinetEFlatB = {
     | g\prall r \trl {a,( cis) cis} \break
 
     | \trl {cis( e) e} g r
-    | \trl {d( c d)} a r
-    | \trl {g'( b a)} f8[ r16 g16]
+    | \trl {d'( c d)} a r
+    | \trl {g( b a)} f8[ r16 g16]
     | a4. a8 \break
 
     | g8.\prall[( f16)] e8.\prall[( d16)]
@@ -166,11 +166,11 @@ clarinetEFlatE = {
 
     | cis2( | cis8) r \trl {b( cis b)} | g2( | g8) r \trl {b( cis b)} \break
 
-    | g8 r \trl {b( cis b)} | g[ r16 b] a8.[( gis16)] | a2( | a8)[ a, d fis] \break
+    | g8 r \trl {b( cis b)} | g[ r16 b] a8.[( gis16)] | a2( | a8)[ a,( d fis)] \break
 
     | a2( | a8) r \trl {g( a g)} | fis2( | fis8)[ a,( d fis)] \break
 
-    | a4( b8.)[ a16]( | d8.)[ a16]( g8.\prall)[ fis16] | e2( | e8) r a,4 \break
+    | a4( b8.)[ a16]( | d8.)[ a16] g8.\prall([ fis16)] | e2( | e8) r a,4 \break
 
     | g'2( | g8) r \trl {g( a g)} | fis2( | fis8) r \trl {fis( g fis)} \break
 
@@ -217,3 +217,7 @@ staffClarEFlat = \new Staff \with {
   shortInstrumentName = \markup \teeny { cl.e\flat }
 }
 \clarinetEFlatNotes
+
+\score {
+  \staffClarEFlat
+}

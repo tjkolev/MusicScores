@@ -19,7 +19,7 @@ fluteA = {
     | \trl {aes8( g) f} \trl {aes( g) f} | c\prall r r4 | \trl {aes'8( g) f} \trl {aes( g) f} | c'\prall r r4 \break
     | \trl {des8( c) bes} \trl {des( c) bes} | f\prall r r4 | \trl {c'8( b) c} \trl {aes( g) aes} | f\prall r r4 \break
     | aes2( | aes8)[ g( bes aes)] | g([ f e des)] | bes2 \break
-    | \trl {c8( des c)} g' r | \trl {c,( des c)} f r | \trl {c'( b c)} \trl {aes( g aes) }
+    | \trl {c8( des c)} g'\prall r | \trl {c,( des c)} f\prall r | \trl {c'( b c)} \trl {aes( g aes) }
   }
   \alternative {
     { f8 r r4 \break }
@@ -44,7 +44,7 @@ oboeA = {
     | \rpt 4 {r2} \break
     | \rpt 4 {r2} \break
     | aes'2( | aes8)[ g( bes aes)] | g([ f e des)] | bes2 \break
-    | \trl {c8( des c)} g' r | \trl {c,( des c)} f r | \trl {c( b c)} \trl {aes( g aes) }
+    | \trl {c8( des c)} g'\prall r | \trl {c,( des c)} f\prall r | \trl {c( b c)} \trl {aes( g aes) }
   }
   \alternative {
     { f8 r r4 \break }

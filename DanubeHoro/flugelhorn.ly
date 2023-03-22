@@ -18,7 +18,7 @@ flugehornA = {
     | bes'2( | bes8)[ a( c bes)] | a([ g fis ees)] | c2 \break
 
     | \tag #'flghI  { \trl {d'8( ees d)} a' r | \trl {d,( ees d)} g r | \trl {d( cis d)} \trl {bes( a bes)} }
-      \tag #'flghII { \trl {d'8( ees d)} fis r | \trl {d,( ees d)} bes' r | fis2 }
+      \tag #'flghII { \trl {d'8( ees d)} fis r | \trl {d( ees d)} bes r | fis2 }
   }
   \alternative {
     { g8 r8 r4 \break }
@@ -54,7 +54,7 @@ flugehornBII = {
     | a2) | \trl {bes8( a bes)} bes r | \trl {a( bes a)} g[ r16 a16] | bes4. bes8 \break
     | a8.\prall([ g16)] fis8.\prall([ g16)] | g8\prall r g\prall r | bes\prall r \trl {g( fis g)} | bes2( \break
     | bes2) | \trl {ees8( d) d} \trl {d d d} | \trl {d( ees d)} \trl {c( bes a)} \break
-    | bes2( | bes8)[ a( bes c)] | bes[ bes( bes bes)] \break
+    | bes2( | bes8)[ a( bes c)] | bes[ bes bes bes] \break
     | c8 r8 r4 | a8[ a\prall( gis a)] | bes r r4 | r8 g\prall([ fis g)] \break
     | a4 fis4 | g2(
   }
@@ -76,7 +76,7 @@ flugehornC = {
       \tag #'flghII { \repeat unfold 2 {\trl {d8( ees d)} b r} }
 
     | \trl {d( es d)} \trl {c( b c)} \break
-    | \trl {d( c b)} \trl {aes( g f)} | b2( | bes8)[ d( aes f)] \break
+    | \trl {d( c b)} \trl {aes( g f)} | b2( | bes8)[ c( aes f)] \break
     | g2( | g) | d'( | d8)[ f( ees b)] \break
     | c2( | c2) | r8 c([ d ees)] | f2 \break
     | \acc f8 ees([ d c b)] | aes2 | \trl {d8( ees d)} c r \break
@@ -128,7 +128,7 @@ flugehornE = {
     | c8 r \trl {e( fis e)} | c8[ r16 e16] d8.[( cis16)] | d2( | d8)[ d,( g b)] \break
     | d2( | d8) r \trl {c( d c)} | b2( | b8)[ d,( g b)] \break
     | d4( e8.)[ d16]( | g8.)[ d16] c8.\prall( b16) | a2( | a8) r d,4 \break
-    | c'2( | c8) r \trl {c( d c)} | b2( | b8) r \trl { b c b } \break
+    | c'2( | c8) r \trl {c( d c)} | b2( | b8) r \trl { b( c b) } \break
     | a8 r \trl {b( c b)} | a8[ r16 c16] b8.[( a16)] | g2(
   }
   \alternative {
@@ -146,8 +146,8 @@ flugehornEII = {
     | d2( | d8) r \trl {c( d c)} | a2( | a8) r \trl {c( d c)} \break
     | a8 r \trl {c( d c)} | a8[ r16 c16] b8.[( ais16)] | b2( | b8)[ d,( g b)] \break
     | b2( | b8) r \trl {a( b a)} | g2( | g8)[ d( g b)] \break
-    | b4( c8.)[ b16]( | b8.)[ b16]( a8.\prall)[ g16] | fis2( | fis8) r d4 \break
-    | a'2( | a8) r \trl {a( b a)} | g2( | g8) r \trl { g a g } \break
+    | b4( c8.)[ b16]( | b8.)[ b16] a8.\prall([ g16)] | fis2( | fis8) r d4 \break
+    | a'2( | a8) r \trl {a( b a)} | g2( | g8) r \trl { g( a g) } \break
     | fis8 r \trl {g( a g)} | fis8[ r16 a16] g8.[( fis16)] | g2(
   }
   \alternative {
@@ -173,14 +173,14 @@ flugehornF = {
 flugehornFII = {
   \sectionLabel "Part F"
   \repeat volta 2 {
-    | \repeat unfold 3 { r8 b[ r b]} \break
+    | \repeat unfold 2 { r8 b[ r b]} | r8 c[ r c] \break
     | r b4.:8 | fis2( | fis8)[ fis\prall( e fis)] | g4. g8 \break
     | a8.\prall([ g16)] fis8.\prall([ e16)] | \repeat unfold 3 { r8 b'[ r b]} | r b4.:8 \break
     | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
   }
   \alternative {
-    { e8 r b'4 }
-    { e,8 r r4 }
+    { e8 r a4 }
+    { e8 r r4 }
   }
 }
 

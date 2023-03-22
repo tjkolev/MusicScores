@@ -37,7 +37,7 @@ trumpetIIA = {
     | d4 c | bes c | d2( | d8) r r4 \break
     | \rpt 4 { r8 d[ r d] } \break
     | \rpt 2 { r8 ees[ r ees] } | r d4.:8 | d2:8 \break
-    | \rpt 3 { r8 d[ r d] } | r ees4.:8 \break
+    | \rpt 3 { r8 ees[ r ees] } | r ees4.:8 \break
     | fis2 | fis4 g8 r8 | fis2
   }
   \alternative {
@@ -59,7 +59,7 @@ trumpetIB = {
     | bes2) | bes2 | g2 \break
     | g2( g8)[ a( bes c)] | bes[ bes bes bes] \break
     | c8 r r4 | a8[ a\prall( gis a)] | bes r r4 | r8 g\prall([ fis g)] \break
-    | a4 gis4 | g2(
+    | a4 fis4 | g2(
   }
   \alternative {
     { g8) r d4 }

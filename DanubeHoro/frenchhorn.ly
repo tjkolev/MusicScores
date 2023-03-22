@@ -52,11 +52,11 @@ frhornInIIB = {
   \sectionLabel "Part B"
   \repeat volta 2 {
     | \rpt 3 { r8 <d a'>[ r <d a'>] } \break
-    | r8 <d a'>4.:8 | \rpt 3 { r8 <cis a'>[ r <cis a'>] } \break
+    | r8 <d a'>4.:8 | r8 <cis a'>[ r <cis a'>] | r8 <cis a'>[ r <d a'>] | r8 <cis a'>[ r <cis a'>] \break
     | r8 <cis a'>4.:8 | \rpt 3 { r8 <cis a'>[ r <cis a'>] } \break
     | r8 <cis a'>4.:8 | r8 <d a'>[ r <d a'>] | r8 <cis a'>[ r <cis a'>] | r8 <d a'>[ r <d a'>] \break
     | r8 <cis a'>[ r <cis a'>] | \rpt 3 { r8 <d a'>[ r <d a'>] } \break
-    | r8 <d a'>4.:8 | \rpt 2 { r8 <c a'>[ r <c a'>] } \break
+    | r8 <d a'>4.:8 | r8 <c a'>[ r <c a'>] | r8 <c a'>[ r <d g>] \break
     | r8 <d a'>4.:8 | <d a'>8 r r4 | r8 <d a'>([ <d gis> <d a'>)] \break
     | <cis a'>8 r r4 | r8 <cis a'>([ <c! a'> <cis a'>)] | <d a'>8 r r4 | r8 <d a'>([ <cis a'> <d a'>)] \break
     | r8 <cis a'>[ r <cis a'>] | r <d a'>4.:8
@@ -75,7 +75,7 @@ frhornIIInIVB = {
     | r8 <g a,>4.:8 | \rpt 3 { r8 <g a,>[ r <g a,>] } \break
     | r8 <g a,>4.:8 | r8 <f a,>[ r <f a,>] | r8 <g a,>[ r <g a,>] | r8 <f a,>[ r <f a,>] \break
     | r8 <g a,>[ r <g a,>] | \rpt 3 { r8 <f a,>[ r <f a,>] } \break
-    | r8 <f a,>4.:8 | \rpt 2 { r8 <f a,>[ r <f a,>] } \break
+    | r8 <f a,>4.:8 | r8 <f a,>[ r <f a,>] | r8 <d a>[ r <d bes>] \break
     | r8 <f a,>4.:8 | <f a,>8 r r4 | r8 <f a,>([ <f b,> <f a,>)] \break
     | <g a,>8 r r4 | r8 <e a,>([ <dis a> <e a,>)] | <f a,>8 r r4 | r8 <f a,>([ <e a,> <f a,>)] \break
     | r8 <g a,>[ r <g a,>] | r <f a,>4.:8
@@ -96,9 +96,9 @@ frhornInIIC = {
     | r8 <fis d'>[ r <fis d'>] | r8 <fis d'>[ r <a d>] | \rpt 2 { r8 <g d'>[ r <g d'>] } \break
     | \rpt 2 { r8 <a d>[ r <a d>] } | r8 <g d'>[ r <g d'>] | r8 <g d'>4.:8 \break
     | \rpt 2 { r8 <fis d'>[ r <fis d'>] } | r8 <fis d'>4.:8 \break
-    | <fis d'>2:8^"...." | r8 <fis d'>[ r <fis d'>] | r8 <g d'>[ r <fis d'>] \break
+    | <fis d'>2:8^"...." | r8 <fis d'>[ r <fis d'>] | r8 <g d'>[ r <fis c'>] \break
     | \rpt 3 { r8 <fis d'>[ r <fis d'>] } | r8 <fis d'>[ r <a d>] \break
-    | \rpt 2 { r8 <g d'>[ r <g d'>] } | r8 <g d'>4.:8 | r8 <ees c'>[ r <ees d'>] \break
+    | \rpt 2 { r8 <g d'>[ r <g d'>] } | r8 <g d'>4.:8 | r8 <ees c'>[ r <ees c'>] \break
     | \grace s8 \rpt 2 { r8 <ees c'>[ r <ees c'>] } | r8 <fis c'>[ r <g d'>] \break
     | r8 <g c>[ r <g c>] | r <fis d'>4.:8
   }
@@ -137,7 +137,7 @@ frhornInIID = {
     | \rpt 3 { r8 <d a'>[ r <d a'>] } | | r8 <d a'>4.:8 \break
     | r8 <f c'>[ r <f c'>] | r <fis c'>[ r <fis c'>] | r <g bes>4.:8 | <g bes>2:8^"...." \break
     | \rpt 3 { r8 <e a>[ r <e a>] } | | r8 <e a>4.:8 \break
-    | \rpt 2 { r8 <e a>[ r <e a>] } | | r8 <f a>4.:8
+    | \rpt 2 { r8 <e a>[ r <e a>] } | | r8 <d a'>4.:8
   }
   \alternative {
     { <d a'>8 r <e a>4 }
@@ -171,13 +171,13 @@ frhornInIIE = {
     | \rpt 2 { r8 <e a>4.:8 | <e a>2:8 } \break
     | <e a>8 r r4 | r8 <e a>[ r <e a>] | r <d a'>4.:8 | <d fis>8 r r4 \break
     | \rpt 2 { r8 <d a'>4.:8 | <d a'>2:8 } \break
-    | \rpt 2 { r8 <d a'>[ r <d a'>] } | r8 <e a>4.:8 | <e a>8 r <e a>4 \break
+    | \rpt 2 { r8 <d a'>[ r <d a'>] } | r8 <e a>4.:8 | <e g>8 r <e a>4 \break
     | \rpt 2 { r8 <e a>[ r <e a>] } | \rpt 2 { r8 <d a'>[ r <d a'>] } \break
     | \rpt 2 { r8 <e a>[ r <e a>] } | r8 <d a'>4.:8
   }
   \alternative {
     { <d a'>8 r r4 \break }
-    { <d a'>8 r <d ais'>4 }
+    { <d a'>8 r <e ais>4 }
   }
 } % E part
 

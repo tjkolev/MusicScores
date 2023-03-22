@@ -71,7 +71,7 @@ hornBarB = {
     | f8 r aes r | c2( | c8)[ c( des ees)] \break
     | c2( | c2) | c2( | c8)[ c( e g)] \break
     | c,2( \repeatTie | c2)( | c2)( | c8)[ c( des c)] \break
-    | e2 | f | c( | c8)[ aes, des f] \break
+    | e2 | f | c( | c8)[ c, f aes] \break
     | bes8.\prall([ aes16)] g8.\prall([ f16)] | f8 r aes r | c2( | c8)[ c( des ees)] \break
     | c2 | \trl {f8( ees) ees} \trl {ees ees ees} | \trl {ees( f ees)} \trl {des( c bes)} \break
     | c8[ f,( aes c] | f) r r4 | r8 c([ b c)] \break
@@ -115,7 +115,7 @@ hornBarC = {
   \key des \major
   \repeat volta 2 {
     \transpose b a { \relative { \hornTransPartC } } | f4 bes8 r \break
-    | ges4 c,4 | f8 r c'[ b]
+    | ges4 c,4 | f8 r c'[ a]
   }
   \alternative {
     { f8 r8 r4 }
@@ -161,9 +161,9 @@ hornTenE = {
     | d'4( e8.)[ d16]( | g8.)[ d16]( c8.)[ b16] | a8[ d,( fis a)] | d2 \break
     | fis2( | fis8) r \trl {e( fis e)} | c2( | c8) r \trl {e( fis e)} \break
     | c8 r \trl {e( fis e)} | c8[ r16 e16] d8.[( cis16)] | d2( | d8)[ d,( g b)] \break
-    | d8[ d, g b] | d2 | r8 b([ d b)] | g2 \break
+    | d8[ d,( g b)] | d2 | r8 b([ d b)] | g2 \break
     | d'4( c8.)[ d16]( | g8.)[ d16] c8.\prall( b16) | a8[ d,( fis a)] | d r d4 \break
-    | a'2( | a8) r \trl {a( b a)} | g2( | g8) r \trl { g a g } \break
+    | a'2( | a8) r \trl {a( b a)} | g2( | g8) r \trl { g( a g) } \break
     | fis8 r \trl {g( a g)} | fis8[ r16 a16] g8.[( fis16)] | g2(
   }
   \alternative {
@@ -180,8 +180,8 @@ hornBarE = {
     | c'4( d8.)[ c16]( | f8.)[ c16]( bes8.)[ a16] | g8[ c,( e g)] | c2 \break
     | e2( | e8) r \trl {d( e d)} | bes2( | bes8) r \trl {d( e d)} \break
     | bes8 r \trl {d( e d)} | bes8[ r16 d16] c8.[( b16)] | c2( | c8)[ c,( f a)] \break
-    | c8[ c, f a] | c2 | r8 a([ c a)] | f2 \break
-    | c'4( d8.)[ c16]( | f8.)[ e16] bes8.\prall( a16) | g8[ c,( e g)] | c r c4 \break
+    | c8[ c,( f a)] | c2 | r8 a([ c a)] | f2 \break
+    | c'4( d8.)[ c16]( | f8.)[ c16] bes8.\prall( a16) | g8[ c,( e g)] | c r c4 \break
     | c2( | c2) | f,2( | f2) \break
     | c'2 | c4 c4 | f,4 c'8[ a]
   }
@@ -200,8 +200,8 @@ hornTenF = {
     | r8 b([ dis fis)] | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
   }
   \alternative {
-    { e8 r b,4 }
-    { e'8 r r4 }
+    { e8 r b4 }
+    { e8 r r4 }
   }
 } % F part
 

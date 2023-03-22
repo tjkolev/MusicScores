@@ -36,7 +36,7 @@ trombB = {
     | r8 <c e bes'>4.:8 | \rpt 3 { r8 <c e bes'>[ r <c e bes'>] } \break
     | r8 <c e bes'>4.:8 |  r8 <c f aes>[ r <c f aes>] | r8 <c e bes'>[ r <c e bes'>] | r8 <c f aes>[ r <c f aes>] \break
     | r8 <c e bes'>[ r <c e bes'>] | \rpt 3 { r8 <c f aes>[ r <c f aes>]} \break
-    | r <c f aes>4.:8 | r8 <c ees aes>[ r <c ees aes>] | r <c ees f>[ r <c ees f>] \break
+    | r <c f aes>4.:8 | r8 <c ees aes>[ r <c ees aes>] | r <c ees f>[ r <des ees f>] \break
     | r <c f aes>4.:8 | <c f aes>8 r r4 | r8 <c f aes>([ <d f aes> <c f aes>)] \break
     | <c e bes'>8 r r4 | r8 <c e g>[ <c ees! fis> <c e g>] | <c f aes> r r4 | r8 <c f aes>[ <c e g> <c f aes>] \break
     | r8 <c e bes'>[ r <c e bes'>] | r <c f aes>4.:8
@@ -59,7 +59,7 @@ trombC = {
     | \rpt 3 { r8 <f a c>[ r <f a c>] } | r <f a c>[ r <f c' des>] \break
     | \rpt 2 { r8 <f bes des>[ r <f bes des>] } | r <f bes des>4.:8 | r8 <ees ges bes>[ r <ees ges bes>] \break
     | \grace s8 \rpt 2 { r8 <ees ges bes>[ r <ees ges bes>] } | r8 <f a c>[ r <f bes des>] \break
-    | r <f c' des>[ r <f c' des>] | r <f a c>4.:8
+    | r <ges c bes>[ r <ges c bes>] | r <f a c>4.:8
   }
   \alternative {
     { <f a c>8 r r4 }
@@ -104,8 +104,9 @@ trombE = {
 trombF = {
   \sectionLabel "Part F"
   \repeat volta 2 {
-    | d8[ e f a] | a r f[ a] | \inInII \inIII <bes bes,>[ <d d,> <c c,> <bes bes,>] \break
+    | d8[ e f g] | a r f[ a] | \inInII \inIII <bes bes,>[ <d d,> <c c,> <bes bes,>] \break
     | <a a,>2 | r8 <a g e>4.:8 | r8 <e g a>[ r <e g a>] | r <d f a>[ r <d f a>] \break
+    | r8 <d f a>4.:8 | d8[ e f g] | a8 r f[ a] | bes[ d c bes] a2 \break
     | r8 <e g a>4.:8 | \rpt 2 { r8 <e g a>[ r <e g a>] }
   }
   \alternative {
@@ -133,8 +134,7 @@ staffTrombone = \new Staff \with {
 }
 \tromboneNotes
 
-%{
+
 \score {
   \staffTrombone
 }
-%}

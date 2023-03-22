@@ -73,13 +73,13 @@ tubaIIB = {
   \repeat volta 2 {
     | \rpt 3 { f8[ r c] r } \break
     | f[ g aes f] | \rpt 2 { c[ r c] r } | c[ r g] r \break
-    | c[ bes aes g] | \rpt 3 { c'[ r g] r } \break
-    | c r c[ g'] | f[ r f] r | c[ r c] r| f,[ r f] r \break
+    | c[ bes aes g] | \rpt 3 { c[ r g] r } \break
+    | c r c[ g'] | f[ r f] r | c[ r c] r| f[ r f] r \break
     | c[ r c] r | \rpt 3 { f[ r c] r } \break
     | f[ g aes f] | aes,[ r aes] r | a[ r bes] r \break
     | f'[ aes! c aes] | f r r4 | f8[ r f] r \break
-    | c' r r4 | c8[ r c] r | f, r r4 | c'4 r \break
-    | c,8[ r c] r | f r c[ aes]
+    | c r r4 | c8[ r c] r | f r r4 | c4 r \break
+    | c8[ r c] r | f r c[ aes]
   }
   \alternative {
     { f8 r c'4 }
@@ -97,7 +97,7 @@ tubaIC = { % 31 bars + 1
     | \rpt 2 { f[ r c'] r } | f,[ f' ees des] \break
     | c[ bes a ges] | f[ r c'] r | bes[ r c] r \break
     | f[ r f] r | f r c[ a] | f'[ r c] r | f[ r f] r \break
-    | bes,[ r des] r | bes[ r f] r | bes4 r | f8[ r bes] r \break
+    | bes,[ r des] r | bes[ r f] r | bes4 r | ges8[ r bes] r \break
     | \grace s8 \rpt 2 { ees[ r bes] r } | f[ r bes] r \break
     | ges[ r c] r | f, r c'[ a]
   }
@@ -117,7 +117,7 @@ tubaIIC = { % 31 bars + 1
     | \rpt 2 { f[ r c] r } | f[ f ees des] \break
     | c[ bes' a ges] | f[ r c] r | bes[ r c] r \break
     | f[ r f] r | f r c[ a] | f'[ r c] r | f[ r f] r \break
-    | bes,[ r des] r | bes[ r f'] r | bes,4 r | f8[ r bes] r \break
+    | bes,[ r des] r | bes[ r f'] r | bes,4 r | ges8[ r bes] r \break
     | \grace s8 \rpt 2 { ees[ r bes] r } | f'[ r bes,] r \break
     | ges[ r c] r | f r c[ a]
   }

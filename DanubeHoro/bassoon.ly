@@ -16,7 +16,7 @@ bassoonA = {
     | c2( | c8)[ c( \acc ees des c)] | f2( | f8)[ f( g aes)] \break
     | des,2( | des8)[ f( e! f)] | c2( | c4) r4 \break
     | \rpt 2 { f,,8[ r c] r } | bes'[ r g] r | bes[ c des bes] \break
-    |c8[ r g] r | c[ r f,] r | aes[ r c,] r
+    |c8[ r g] r | c[ r f,] r | g[ r c,] r
   }
   \alternative {
     { f8 r r4 \break }
@@ -53,7 +53,7 @@ bassoonC = {
     | \rpt 2 { f[ r c] r } | f[ f' ees des] \break
     | c[ bes a ges] | f[ r c] r | bes[ r c] r \break
     | f[ r f] r | f r c'[ a] | f[ r c] r | f[ r f] r \break
-    | bes,[ r des] r | bes'[ r f] r | bes,4 r | f'8[ r bes] r \break
+    | bes,[ r des] r | bes'[ r f] r | bes,4 r | ges'8[ r bes] r \break
     | \grace s8 ees[ r bes] r | ees,[ r bes'] r | f[ r bes] r \break
     | ges[ r c] r | f, r c'[ a]
   }
