@@ -2,8 +2,7 @@
 
 \include "helpers.ly"
 
-inInII = \textMark "I, II"
-inIII = \tweak direction #DOWN \textMark "III"
+inSplit = _\markup "III" ^\markup "I&II"
 
 trombA = {
   \sectionLabel "Intro"
@@ -71,8 +70,8 @@ trombD = {
   \sectionLabel "Part D" %%%%%%%%%%%%%%%%%%%%%%%%
   \key aes \major
   \repeat volta 2 {
-    | f8 r f[ c] \inIII | \inInII <f f,>[ <g g,> <aes aes,> <bes bes,>] | <c c,> <des des,>4 <ees ees,>8 | <c c,>2 \break
-    | r8 <ees, aes c>[ r <ees aes c>] | r8 <f a c>[ r <f a c>] | <f bes c> \inInII \inIII r <bes bes,>[ <c c,>] | <des des,>[ <ees ees,> <f f,> <des des,>] \break
+    | f8 r f[ c] | <f f,>[ \inSplit <g g,> <aes aes,> <bes bes,>] | <c c,> <des des,>4 <ees ees,>8 | <c c,>2 \break
+    | r8 <ees, aes c>[ r <ees aes c>] | r8 <f a c>[ r <f a c>] | <f bes c> r <bes bes,>[ \inSplit <c c,>] | <des des,>[ <ees ees,> <f f,> <des des,>] \break
     | <c c,> r c,[ des] | e[ f g aes] | g g4 ees8 | c2 \break
     | \rpt 2 { r8 <e g bes>[ r <e g bes>]} | r <f aes c>4.:8
   }
@@ -104,7 +103,7 @@ trombE = {
 trombF = {
   \sectionLabel "Part F"
   \repeat volta 2 {
-    | d8[ e f g] | a r f[ a] | \inInII \inIII <bes bes,>[ <d d,> <c c,> <bes bes,>] \break
+    | d8[ e f g] | a r f[ a] | <bes bes,>[ \inSplit <d d,> <c c,> <bes bes,>] \break
     | <a a,>2 | r8 <a g e>4.:8 | r8 <e g a>[ r <e g a>] | r <d f a>[ r <d f a>] \break
     | r8 <d f a>4.:8 | d8[ e f g] | a8 r f[ a] | bes[ d c bes] a2 \break
     | r8 <e g a>4.:8 | \rpt 2 { r8 <e g a>[ r <e g a>] }
