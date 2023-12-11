@@ -220,7 +220,7 @@ sgPercussion = \new StaffGroup <<
       \override StaffSymbol.line-count = #1
     }
     <<
-      \new DrumVoice { \stemUp \snareA \snareB \snareC \snareD \snareE \snareF }
+      \new DrumVoice { \stemUp \snareA \snareB \snareF }
     >>
 
   \new DrumStaff \with {
@@ -230,8 +230,8 @@ sgPercussion = \new StaffGroup <<
     }
     <<
       \set DrumStaff.drumStyleTable = #(alist->hash-table mydrums)
-      \new DrumVoice { \voiceTwo \stemUp   \cymbIntro \bassncymA \bassncymB \cymC \bassncymD \bassncymE \bassncymF }
-      \new DrumVoice { \voiceOne \stemDown \bassIntro \bassncymA \bassncymB \bassC \bassncymD \bassncymE \bassncymF }
+      \new DrumVoice { \voiceTwo \stemUp   \cymbIntro \bassncymA \bassncymB \bassncymF }
+      \new DrumVoice { \voiceOne \stemDown \bassIntro \bassncymA \bassncymB \bassncymF }
     >>
 >>
 

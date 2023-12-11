@@ -200,8 +200,9 @@ oboeE = {
 
 fluteF = {
   \sectionLabel "Part F"
+  \key f \major
   \repeat volta 2 {
-    | \rpt 3 { r8 d[ r d] } \break
+    | \rpt 3 { r8 d'[ r d] } \break
     | r d4.:8 | g,2( | g8)[ g(\prall f g)] | a4. a8 \break
     | g8.\prall([ f16)] e8.\prall([ d16)] | \rpt 3 { r8 d'[ r d] } | r d4.:8 \break
     | \trl {a8( bes a)} g r | \trl {g( a g)} f[ r16 e] | g8[ r16 g] f8[ e]
@@ -214,8 +215,9 @@ fluteF = {
 
 oboeF = {
   \sectionLabel "Part F"
+  \key f \major
   \repeat volta 2 {
-    | \rpt 3 { r8 d[ r d] } \break
+    | \rpt 3 { r8 d'[ r d] } \break
     | r d4.:8 | g,2( | g8)[ g(\prall f g)] | a4. a8 \break
     | g8.\prall([ f16)] e8.\prall([ d16)] | \rpt 3 { r8 d'[ r d] } | r d4.:8 \break
     | \trl {a8( bes a)} g r | \trl {g( a g)} f[ r16 e] | g8[ r16 g] f8[ e]
@@ -231,9 +233,6 @@ fluteNotes = {
   \relative c' {
     \fluteA
     \fluteB
-    \fluteC
-    \fluteD
-    \fluteE
     \fluteF
   }
 }
@@ -243,9 +242,6 @@ oboeNotes = {
   \relative {
     \oboeA
     \oboeB
-    \oboeC
-    \oboeD
-    \oboeE
     \oboeF
   }
 }

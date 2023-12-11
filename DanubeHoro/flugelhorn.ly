@@ -158,8 +158,9 @@ flugehornEII = {
 
 flugehornF = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
-    | \rpt 3 { r8 e[ r e]} \break
+    | \rpt 3 { r8 e'[ r e]} \break
     | r e4.:8 | a,2( | a8)[ a\prall( g a)] | b4. b8 \break
     | a8.\prall([ g16)] fis8.\prall([ e16)] | \rpt 3 { r8 e'[ r e]} | r e4.:8 \break
     | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
@@ -172,6 +173,7 @@ flugehornF = {
 
 flugehornFII = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
     | \rpt 2 { r8 b[ r b]} | r8 c[ r c] \break
     | r b4.:8 | fis2( | fis8)[ fis\prall( e fis)] | g4. g8 \break
@@ -190,9 +192,6 @@ flugehornINotes = {
   \relative e'' {
     \keepWithTag #'flghI \flugehornA
     \flugehornB
-    \keepWithTag #'flghI \flugehornC
-    \flugehornD
-    \flugehornE
     \flugehornF
   }
 }
@@ -203,9 +202,6 @@ flugehornIINotes = {
   \relative e'' {
     \keepWithTag #'flghII \flugehornA
     \flugehornBII
-    \keepWithTag #'flghII \flugehornC
-    \flugehornDII
-    \flugehornEII
     \flugehornFII
   }
 }

@@ -204,6 +204,7 @@ frhornIIInIVE = {
 
 frhornInIIF = {
   \sectionLabel "Part F"
+  \key d \major
   \repeat volta 2 {
     | b8[ cis d e] | fis8 r d[ fis] | g[ b a g] \break
     | fis2 | r8 <e ais>4.:8 | r8 <e ais>[ r <e ais>] | r8 <d b'>[ r <d b'>] \break
@@ -218,6 +219,7 @@ frhornInIIF = {
 
 frhornIIInIVF = {
   \sectionLabel "Part F"
+  \key d \major
   \repeat volta 2 {
     | b,8[ cis d e] | fis8 r d[ fis] | g[ b a g] \break
     | fis2 | r8 <fis cis>4.:8 | r8 <fis cis>[ r <fis cis>] | r8 <fis b,>[ r <fis b,>] \break
@@ -237,9 +239,6 @@ frhornInIINotes = {
   \relative c' {
     \frhornInIIA
     \frhornInIIB
-    \frhornInIIC
-    \frhornInIID
-    \frhornInIIE
     \frhornInIIF
   }
 }
@@ -250,25 +249,16 @@ frhornIIInIVNotes = {
   \relative c' {
     \frhornIIInIVA
     \frhornIIInIVB
-    \frhornIIInIVC
-    \frhornIIInIVD
-    \frhornIIInIVE
     \frhornIIInIVF
   }
 }
 
 sgFrenchHorn = \new StaffGroup <<
   \new Staff \with {
-    instrumentName = \markup { \column { \line { French Horn E\flat} \line {"I & II"} } }
-    shortInstrumentName = \markup \teeny { \column { \line {"fhorn"} \line {"I,II"} } }
+    instrumentName = \markup { \column { \line { Alto Sax } \line {"I & II"} } }
+    shortInstrumentName = \markup \teeny { \column { \line {"altSax"} \line {"I,II"} } }
   }
   \frhornInIINotes
-
-  \new Staff \with {
-    instrumentName = \markup { \column { \line { French Horn E\flat} \line {"III & IV"} } }
-    shortInstrumentName = \markup \teeny { \column { \line {"fhorn"} \line {"III,IV"} } }
-  }
-  \frhornIIInIVNotes
 >>
 
 \score {

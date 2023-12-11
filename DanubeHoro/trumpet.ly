@@ -203,6 +203,7 @@ trumpetIIE = {
 
 trumpetIF = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
     | \rpt 2 {r8 g[ r g] } | r a[ r a] \break
     | r8 g4.:8 | fis2( | fis8)[ fis(\prall e fis)] | g4. b8 \break
@@ -217,6 +218,7 @@ trumpetIF = {
 
 trumpetIIF = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
     | \rpt 2 {r8 g[ r g] } | r a[ r a] \break
     | r8 g4.:8 | r8 dis4.:8 | r8 dis[ e dis] | r8 e[ r e] \break
@@ -236,9 +238,6 @@ trumpetINotes = {
   \relative c' {
     \trumpetIA
     \trumpetIB
-    \trumpetIC
-    \trumpetID
-    \trumpetIE
     \trumpetIF
   }
 }
@@ -248,9 +247,6 @@ trumpetIINotes = {
   \relative c' {
     \trumpetIIA
     \trumpetIIB
-    \trumpetIIC
-    \trumpetIID
-    \trumpetIIE
     \trumpetIIF
   }
 }

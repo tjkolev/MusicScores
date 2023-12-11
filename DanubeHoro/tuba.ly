@@ -197,8 +197,9 @@ tubaIIE = {
 
 tubaIF = {
   \sectionLabel "Part F"
+  \key f \major
   \repeat volta 2 {
-    | d,8[ e f g] | a r f[ a] | bes[ d c bes] \break
+    | d8[ e f g] | a r f[ a] | bes[ d c bes] \break
     | a2 | a8[ r e'] r | a,[ r a] r | d[ r d] r \break
     | d4 r | d,8[ e f g] | a r f[ a] | bes[ d c bes] a2 \break
     | a4 r | \rpt 2 { a8[ r a] r }
@@ -211,8 +212,9 @@ tubaIF = {
 
 tubaIIF = {
   \sectionLabel "Part F" %%%%%%%%%%%%%%%%%%%%%%%%
+  \key f \major
   \repeat volta 2 {
-    | d8[ e f g] | a r f[ a] | bes,[ d c bes] \break
+    | d'8[ e f g] | a r f[ a] | bes,[ d c bes] \break
     | a2 | a8[ r e'] r | a,[ r a] r | d[ r d] r \break
     | d4 r | d8[ e f g] | a r f[ a] | bes,[ d c bes] a2 \break
     | a4 r | \rpt 2 { a8[ r a] r }
@@ -229,9 +231,6 @@ tubaINotes = {
   \relative {
     \tubaIA
     \tubaIB
-    \tubaIC
-    \tubaID
-    \tubaIE
     \tubaIF
   }
 }
@@ -242,9 +241,6 @@ tubaIINotes = {
   \relative {
     \tubaIIA
     \tubaIIB
-    \tubaIIC
-    \tubaIID
-    \tubaIIE
     \tubaIIF
   }
 }

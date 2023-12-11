@@ -14,7 +14,6 @@
 
 
 \include "fluteoboe.ly"
-\include "clarinet-ees.ly"
 \include "clarinet-bes.ly"
 \include "bassoon.ly"
 \include "frenchhorn.ly"
@@ -30,8 +29,6 @@
   \score {
     <<
     \staffFluteOboe
-
-    \staffClarEFlat
 
     \sgClarinetBFlat
 
@@ -69,12 +66,6 @@
 }
 
 \book {
-  \header { instrument = \markup {Clarient E\flat} }
-  \bookOutputSuffix "clarinetEFlat"
-  \staffClarEFlat
-}
-
-\book {
   \header { instrument = \markup {Clarient B\flat} }
   \bookOutputSuffix "clarinetBFlat"
   \sgClarinetBFlat
@@ -87,8 +78,8 @@
 }
 
 \book {
-  \header { instrument = \markup {French Horn E\flat} }
-  \bookOutputSuffix "frenchhorn"
+  \header { instrument = \markup {Alto Sax} }
+  \bookOutputSuffix "altSax"
   \sgFrenchHorn
 }
 
@@ -99,7 +90,7 @@
 }
 
 \book {
-  \header { instrument = "Trombone I, II, and III" }
+  \header { instrument = "Trombone" }
   \bookOutputSuffix "trombone"
   \staffTrombone
 }
@@ -117,15 +108,15 @@
 }
 
 \book {
-  \header { instrument = "Tenor Horn" }
-  \bookOutputSuffix "tenorHorn"
+  \header { instrument = "Tenor Sax" }
+  \bookOutputSuffix "tenorSax"
   \new Staff
     \hornTenNotes
 }
 
 \book {
-  \header { instrument = "Baritone Horn" }
-  \bookOutputSuffix "baritoneHorn"
+  \header { instrument = "Baritone Sax" }
+  \bookOutputSuffix "baritoneSax"
   \new Staff
     \hornBarNotes
 }

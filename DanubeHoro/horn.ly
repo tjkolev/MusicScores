@@ -193,8 +193,9 @@ hornBarE = {
 
 hornTenF = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
-    | e,8[ fis g a] | b r g[ b] | c[ e d c]  \break
+    | e8[ fis g a] | b r g[ b] | c[ e d c]  \break
     | b2 | r8 b([ dis) fis] | b,2 | r8 b([ e) g] \break
     | a8.\prall([ g16)] fis8.\prall([ e16)] | e,8[ fis g a] | b r g[ b] | c[ e d c] | b2 \break
     | r8 b([ dis fis)] | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
@@ -207,10 +208,11 @@ hornTenF = {
 
 hornBarF = {
   \sectionLabel "Part F"
+  \key f \major
   \repeat volta 2 {
-    | d,8[ e f g] | a r f[ a] | bes[ d c bes]  \break
+    | d'8[ e f g] | a r f[ a] | bes[ d c bes]  \break
     | a2 | r8 a([ cis) e] | a,2 | r8 a4.( \break
-    | a2) | d,8[ e f g] | a r f[ a] | bes[ d c bes] | a2 \break
+    | a2) | d,8[ e f g] | a r f[ a] | bes[ d c bes] | a,2 \break
     | r8 a([ cis e)] | \trl {g( a g)} f[ r16 e] | g8[ r16 g] f8[ e8]
   }
   \alternative {
@@ -225,9 +227,6 @@ hornTenNotes = {
   \relative e'' {
     \hornTenA
     \hornTenB
-    \hornTenC
-    \hornTenD
-    \hornTenE
     \hornTenF
   }
 }
@@ -235,12 +234,9 @@ hornTenNotes = {
 hornBarNotes = {
   \clef F
   \time 2/4
-  \relative e'' {
+  \relative e' {
     \hornBarA
     \hornBarB
-    \hornBarC
-    \hornBarD
-    \hornBarE
     \hornBarF
   }
 }
@@ -248,14 +244,14 @@ hornBarNotes = {
 sgHorn = \new StaffGroup <<
 
   \new Staff \with {
-    instrumentName = "Tenor Horn"
-    shortInstrumentName = \markup \teeny "tenHrn"
+    instrumentName = "Tenor Sax"
+    shortInstrumentName = \markup \teeny "tenSax"
   }
   \hornTenNotes
 
   \new Staff \with {
-    instrumentName = "Baritone Horn"
-    shortInstrumentName = \markup \teeny "barHrn"
+    instrumentName = "Baritone Sax"
+    shortInstrumentName = \markup \teeny "barSax"
   }
   \hornBarNotes
 

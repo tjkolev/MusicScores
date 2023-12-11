@@ -99,8 +99,9 @@ bassoonE = {
 
 bassoonF = {
   \sectionLabel "Part F"
+  \key f \major
   \repeat volta 2 {
-    | d,8[ e f g] | a r f[ a] | bes[ d c bes] \break
+    | d8[ e f g] | a r f[ a] | bes[ d c bes] \break
     | a2 | a8[ r e] r | a[ r a] r | d,[ r d] r \break
     | d4 r | d8[ e f g] | a r f[ a] | <bes, bes'>[ <d d'> <c c'> <bes bes'>] <a a'>2  \break
     | a'4 r | \rpt 2 { a8[ r a] r }
@@ -117,9 +118,6 @@ bassoonNotes = {
   \relative {
     \bassoonA
     \bassoonB
-    \bassoonC
-    \bassoonD
-    \bassoonE
     \bassoonF
   }
 }

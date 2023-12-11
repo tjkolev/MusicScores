@@ -206,6 +206,7 @@ clarinetIInIIIE = {
 
 clarinetIF = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
     | \rpt 2 { r8 b[ r b] } | r c[ r c] \break
     | r8 b4.:8 | fis2( | fis8)[ fis\prall( e fis)] | g4. g8 \break
@@ -220,8 +221,9 @@ clarinetIF = {
 
 clarinetIInIIIF = {
   \sectionLabel "Part F"
+  \key g \major
   \repeat volta 2 {
-    | \rpt 2 { r8 <e g>[ r <e g>]} | r8 <e a>[ r <e a>] \break
+    | \rpt 2 { r8 <e' g>[ r <e g>]} | r8 <e a>[ r <e a>] \break
     | r <e g>4.:8 | a,2( | a8)[ a\prall( g a)] | b4. b8 \break
     | a8.\prall([ g16)] fis8.\prall([ e16)] | \rpt 2 { r8 <e' g>[ r <e g>]} | r8 <e a>[ r <e a>] | r <e g>4.:8 \break
     | \trl {b8( c b)} a r | \trl {a( b a)} g[ r16 fis] | a8[ r16 a] g8[ fis8]
@@ -239,9 +241,6 @@ clarinetINotes = {
   \relative c' {
     \clarinetIA
     \clarinetIB
-    \clarinetIC
-    \clarinetID
-    \clarinetIE
     \clarinetIF
   }
 }
@@ -252,9 +251,6 @@ clarinetIInIIINotes = {
   \relative c' {
     \clarinetIInIIIA
     \clarinetIInIIIB
-    \clarinetIInIIIC
-    \clarinetIInIIID
-    \clarinetIInIIIE
     \clarinetIInIIIF
   }
 }
